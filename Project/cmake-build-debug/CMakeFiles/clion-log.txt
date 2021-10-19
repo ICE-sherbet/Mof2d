@@ -1,0 +1,13 @@
+C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project
+-- Configuring done
+CMake Error at CMakeLists.txt:19 (add_executable):
+  Cannot find source file:
+
+    sprite_2d.cpp
+
+
+CMake Error at CMakeLists.txt:19 (add_executable):
+  No SOURCES given to target: Project
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

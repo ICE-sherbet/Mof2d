@@ -98,7 +98,7 @@
   <ItemGroup>
     <ClCompile Include="collider_2d.cpp" />
     <ClCompile Include="collider_2d_box.cpp" />
-    <ClCompile Include="component.cpp" />
+    <ClCompile Include="Component.cpp" />
     <ClCompile Include="entity_2d.cpp" />
     <ClCompile Include="GameApp.cpp" />
     <ClCompile Include="input_observer.cpp" />
@@ -113,11 +113,10 @@
   <ItemGroup>
     <ClInclude Include="collider_2d.h" />
     <ClInclude Include="collider_2d_box.h" />
-    <ClInclude Include="component.h" />
+    <ClInclude Include="Component.h" />
     <ClInclude Include="entity_2d.h" />
     <ClInclude Include="GameApp.h" />
     <ClInclude Include="Animator.h" />
-    <ClInclude Include="IAnimator.h" />
     <ClInclude Include="input_observer.h" />
     <ClInclude Include="kadai3.h" />
     <ClInclude Include="object.h" />

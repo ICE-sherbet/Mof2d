@@ -4,7 +4,7 @@
 
 //画像とオブジェクトに付属するコンポーネントを管理するクラス
 //ToDo このクラスには他のコンポーネントを使用する以外の役割をもたないようにする。
-class entity_2d : public component
+class entity_2d : public Component
 {
 	position* position_ = nullptr;
 	collider_2d_box* collision_ = nullptr;

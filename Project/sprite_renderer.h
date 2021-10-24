@@ -1,10 +1,10 @@
 #pragma once
 #include "Mof.h"
 #include "vector"
-#include "component.h"
+#include "Component.h"
 #include "position.h"
 
-class sprite_renderer : public component
+class sprite_renderer : public Component
 {
 private:
 	// ç¿ïW

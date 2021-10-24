@@ -3,8 +3,8 @@
 #include "Mof.h"
 #include "Subject.h"
 
-//À•W‚ğŠÇ—‚·‚éƒNƒ‰ƒX
-class position : public component
+//ï¿½ï¿½ï¿½Wï¿½ï¿½Ç—ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½X
+class position : public Component
 {
 	Vector2 position_ = Vector2(0, 0);
 public:

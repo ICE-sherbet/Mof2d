@@ -36,7 +36,7 @@
     <ClCompile Include="entity_2d.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="component.cpp">
+    <ClCompile Include="Component.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
     <ClCompile Include="position.cpp">
@@ -77,7 +77,7 @@
     <ClInclude Include="entity_2d.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
-    <ClInclude Include="component.h">
+    <ClInclude Include="Component.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
     <ClInclude Include="position.h">
@@ -106,9 +106,6 @@
     </ClInclude>
     <ClInclude Include="kadai3.h">
       <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="IAnimator.h">
-      <Filter>ヘッダー ファイル\Animator</Filter>
     </ClInclude>
     <ClInclude Include="Animator.h">
       <Filter>ヘッダー ファイル\Animator</Filter>

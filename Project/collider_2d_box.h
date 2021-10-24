@@ -2,10 +2,10 @@
 #include "Mof.h"
 #include "collider_2d.h"
 #include "position.h"
-#include "component.h"
+#include "Component.h"
 
 //短形の当たり判定クラス
-class collider_2d_box : public collider_2d, public component
+class collider_2d_box : public collider_2d, public Component
 {
 	CRectangle collider_rectangle_;
 	//デバッグ表示用

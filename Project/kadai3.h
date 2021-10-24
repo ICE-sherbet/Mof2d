@@ -1,11 +1,11 @@
 #pragma once
-#include "component.h"
+#include "Component.h"
 #include "input_observer.h"
 #include "entity_2d.h"
 #include "vector"
 
 class kadai3 final :
-    public component
+    public Component
 {
     std::vector<entity_2d*> entity = std::vector<entity_2d*>();
     int target = 0;

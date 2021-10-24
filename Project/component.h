@@ -3,10 +3,10 @@
 class object;
 
 //コンポーネントクラス
-class component
+class Component
 {
 public:
-	virtual ~component() {}
+	virtual ~Component() {}
 	object* parent_ = nullptr;
 	virtual void start() {}
 	virtual void update() {}

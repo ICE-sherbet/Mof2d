@@ -1,13 +1,13 @@
 #pragma once
 #include <list>
 #include "Mof.h"
-#include "component.h"
-class component;
+#include "Component.h"
+class Component;
 
 //オブジェクトクラス
 class object
 {
-	std::list<component*> components_;
+	std::list<Component*> components_;
 public:
 	object();
 

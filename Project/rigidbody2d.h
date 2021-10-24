@@ -1,10 +1,10 @@
 #pragma once
 #include "rigidbody.h"
-#include "component.h"
+#include "Component.h"
 #include "Mof.h"
 
-//ˆÚ“®—Ê‚È‚Ç‚ğŠÇ—‚·‚éƒNƒ‰ƒX
-class rigidbody2d : public rigidbody,public component
+//ï¿½Ú“ï¿½ï¿½Ê‚È‚Ç‚ï¿½Ç—ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½X
+class rigidbody2d : public rigidbody,public Component
 {
 	Vector2 velocity_;
 public:

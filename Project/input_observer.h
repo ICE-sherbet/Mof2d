@@ -2,14 +2,14 @@
 #include "Mof.h"
 #include "subject.h"
 #include "vector"
-#include "component.h"
+#include "Component.h"
 
 #define LEFT_KEY MOFKEY_LEFT
 #define RIGHT_KEY MOFKEY_RIGHT
 #define UP_KEY MOFKEY_UP
 #define DOWN_KEY MOFKEY_DOWN
 
-class input_observer : public component
+class input_observer : public Component
 {
 
     CVector2 move_vec = CVector2(0,0);

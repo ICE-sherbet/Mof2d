@@ -1,35 +1,36 @@
 #include "entity_2d.h"
 
-entity_2d::~entity_2d()
+Entity2D::~Entity2D()
 {
 }
 
-void entity_2d::update()
+void Entity2D::Update()
 {
 
 
 }
 
-void entity_2d::start()
+void Entity2D::Start()
 {
 
-	position_ = parent_->get_component<position>();
-	rigidbody2d_ = parent_->get_component<rigidbody2d>();
-	sprite_ = parent_->get_component<sprite_renderer>();
+	position_ = parent_->GetComponent<Position>();
+	rigidbody2d_ = parent_->GetComponent<Rigidbody2D>();
+	sprite_ = parent_->GetComponent<SpriteRenderer>();
 
 }
 
-void entity_2d::set_input_(input_observer *input) {
+void Entity2D::SetInput(InputObserver *input) {
     input_ = input;
 
 
 }
 
-entity_2d &entity_2d::move(Vector2 dir) {
-    position_->set_position(position_->get_position() + dir);
+Entity2D& Entity2D::Move(const Vector2 dir)
+{
+    position_->Move(dir);
     return *this;
 }
 
-sprite_renderer *entity_2d::getSprite() const {
+SpriteRenderer *Entity2D::GetSprite() const {
     return sprite_;
 }

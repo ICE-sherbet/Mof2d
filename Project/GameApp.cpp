@@ -16,7 +16,10 @@ mylib::RGBA* bg_rgb_color_;
 
 CTexture* g_texture = new CTexture;
 CTexture* g_texture2 = new CTexture;
-input_observer* input_observer_;
+
+SpriteManager sprite_manager_ = SpriteManager();
+
+InputObserver* input_observer_;
 /*************************************************************************//*!
 		@brief			アプリケーションの初期化
 		@param			None
@@ -28,27 +31,39 @@ MofBool CGameApp::Initialize(void){
 	//リソースフォルダを指定
 	CUtilities::SetCurrentDirectoryA("Resource");
 
-	world = new object();
-	world->add_component<position>(new position(0,0));
-	input_observer_ = world->add_component<input_observer>();
-	auto& kadai = world->add_component<kadai3>()->set_input_(input_observer_);
-	world->start();
+	world = new Object();
+	world->AddComponent<Position>(new Position(0,0));
+	input_observer_ = world->AddComponent<InputObserver>();
+	auto& kadai = world->AddComponent<kadai3>()->set_input_(input_observer_);
+	world->Start();
 	
+
 	g_texture->Load("texture01.png");
 	g_texture2->Load("texture02.png");
+	auto frame = sprite_manager_.AddSpriteSlice(g_texture, 2, 1);
+	std::vector<AnimationKeyFrame> frame_info = {{0,1},{1,1}};
+	AnimationClipData<const Sprite*> clip_data = { frame_info,frame };
+	AnimationClip<const Sprite*> clip;
+	clip.SetClip(clip_data);
+	sprite_manager_.AddSprite(new Sprite(g_texture2,Vector2(0,0)));
+	
+	
 	for (auto &obj: objct_list_) 
 	{
-		obj = new object();
-        obj->add_component<rigidbody2d>();
-		kadai.push(obj->add_component<entity_2d>());
+		obj = new Object();
+        obj->AddComponent<Rigidbody2D>();
+		kadai.push(obj->AddComponent<Entity2D>());
 	}
-	objct_list_[0]->add_component<position>(new position(g_pGraphics->GetTargetWidth() / 2, g_pGraphics->GetTargetHeight() / 2));
-	objct_list_[1]->add_component<position>(new position(0,0));
-	objct_list_[0]->add_component<sprite_renderer>()->texture_load(g_texture).grid_split(2, 1);
-	objct_list_[1]->add_component<sprite_renderer>()->setPivot(Vector2(0, 0)).texture_load(g_texture2);
+	objct_list_[0]->AddComponent<Position>(new Position(g_pGraphics->GetTargetWidth() / 2, g_pGraphics->GetTargetHeight() / 2));
+	objct_list_[1]->AddComponent<Position>(new Position(0,0));
+	auto sprite_render = objct_list_[0]->AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[0]);
+	objct_list_[1]->AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[1]);
+	auto n = new Animator<const Sprite*>(&sprite_render);
 
-	objct_list_[0]->start();
-	objct_list_[1]->start();
+	objct_list_[0]->AddComponent(n)->PushBack(clip);
+
+	objct_list_[0]->Start();
+	objct_list_[1]->Start();
 
 	bg_hsv_color_ = new mylib::HSV(0, 1.0f, 1.0f);
 	bg_rgb_color_ = new mylib::RGBA();
@@ -66,10 +81,10 @@ MofBool CGameApp::Update(void){
 	bg_hsv_color_->set_h(bg_hsv_color_->hue() + 1);
 	//hsvをrgbに変換
 	bg_rgb_color_->to_convert(*bg_hsv_color_);
-	world->update();
+	world->Update();
 	for (auto obj : objct_list_) 
 	{
-		obj->update();
+		obj->Update();
 		
 	}
 	return TRUE;
@@ -89,7 +104,7 @@ MofBool CGameApp::Render(void){
 
 	//描画
 	for (auto obj : objct_list_) {
-		obj->render();
+		obj->Render();
 	}
 	
 	//描画の終了
@@ -108,6 +123,8 @@ MofBool CGameApp::Release(void){
 	//画像リソースを解放
 	delete bg_hsv_color_;
 	delete bg_rgb_color_;
+	g_texture->Release();
+	g_texture2->Release();
 	for (auto &obj : objct_list_)
 	{
 		delete obj;

@@ -96,6 +96,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animator.cpp" />
     <ClCompile Include="collider_2d.cpp" />
     <ClCompile Include="collider_2d_box.cpp" />
     <ClCompile Include="Component.cpp" />
@@ -106,7 +107,9 @@
     <ClCompile Include="object.cpp" />
     <ClCompile Include="position.cpp" />
     <ClCompile Include="rigidbody.cpp" />
-    <ClCompile Include="rigidbody2d.cpp" />
+    <ClCompile Include="Rigidbody2D.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteManager.cpp" />
     <ClCompile Include="sprite_renderer.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
@@ -117,13 +120,16 @@
     <ClInclude Include="entity_2d.h" />
     <ClInclude Include="GameApp.h" />
     <ClInclude Include="Animator.h" />
+    <ClInclude Include="IAnimatable.h" />
     <ClInclude Include="input_observer.h" />
     <ClInclude Include="kadai3.h" />
     <ClInclude Include="object.h" />
     <ClInclude Include="position.h" />
     <ClInclude Include="rigidbody.h" />
-    <ClInclude Include="rigidbody2d.h" />
-    <ClInclude Include="sprite_renderer.h" />
+    <ClInclude Include="Rigidbody2D.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteManager.h" />
+    <ClInclude Include="SpriteRenderer.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="componen_headert.h" />
   </ItemGroup>

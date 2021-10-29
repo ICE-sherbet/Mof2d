@@ -1,7 +1,7 @@
 #pragma once
 #include "Mof.h"
 
-class collider_2d
+class Collider2D
 {
 public:
 };

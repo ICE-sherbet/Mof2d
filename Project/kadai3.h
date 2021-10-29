@@ -7,18 +7,18 @@
 class kadai3 final :
     public Component
 {
-    std::vector<entity_2d*> entity = std::vector<entity_2d*>();
+    std::vector<Entity2D*> entity = std::vector<Entity2D*>();
     int target = 0;
-    input_observer* input_ = nullptr;
+    InputObserver* input_ = nullptr;
 
     void MoveArrow(Vector2& dir);
     void KeyFire(MofInt key);
     void MouseLeftClick();
 public:
 
-    kadai3& set_input_(input_observer *input);
-    void push(entity_2d* entity);;
-    void start() override;
+    kadai3& set_input_(InputObserver *input);
+    void push(Entity2D* entity);;
+    void Start() override;
 
 
 };

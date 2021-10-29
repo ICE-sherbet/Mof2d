@@ -1,5 +1,5 @@
 #pragma once
-class rigidbody
+class Rigidbody
 {
 };
 

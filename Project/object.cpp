@@ -1,9 +1,9 @@
 #include "object.h"
 
-object::object()
+Object::Object()
 {}
 
-object::~object()
+Object::~Object()
 {
 	for (auto elem:components_)
 	{
@@ -11,27 +11,27 @@ object::~object()
 	}
 }
 
-void object::start()
+void Object::Start()
 {
 	for (auto elem : components_)
 	{
-		elem->start();
+		elem->Start();
 	}
 }
 
-void object::update()
+void Object::Update()
 {
 	for (auto elem : components_)
 	{
-		elem->update();
+		elem->Update();
 	}
 }
 
-void object::render()
+void Object::Render()
 {
 	for (auto elem : components_)
 	{
-		elem->render();
+		elem->Render();
 	}
 }
 

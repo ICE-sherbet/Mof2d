@@ -7,8 +7,8 @@
 
 #include "input_observer.h"
 
-#include "sprite_renderer.h"
+#include "SpriteRenderer.h"
 #include "collider_2d_box.h"
-#include "rigidbody2d.h"
+#include "Rigidbody2D.h"
 
 #include "entity_2d.h"

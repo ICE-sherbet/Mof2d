@@ -13,6 +13,7 @@
 #include	"RGBA.h"
 #include "componen_headert.h"
 #include "kadai3.h"
+#include "SpriteManager.h"
 
 /*******************************//*!
 @brief	基本ゲームアプリ。
@@ -20,8 +21,8 @@
 @author	濱田　享
 *//********************************/
 class CGameApp : public CSingleGameApplication {
-	std::vector<object*> objct_list_ = std::vector<object*>(2);//オブジェクト
-	object* world;
+	std::vector<Object*> objct_list_ = std::vector<Object*>(2);//オブジェクト
+	Object* world;
 public:
 	/*************************************************************************//*!
 			@brief			コンストラクタ

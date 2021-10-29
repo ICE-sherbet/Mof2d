@@ -1,33 +1,33 @@
-#include "rigidbody2d.h"
+#include "Rigidbody2D.h"
 
-Vector2 rigidbody2d::velocity() const
+Vector2 Rigidbody2D::GetVelocity() const
 {
 	return velocity_;
 }
 
-rigidbody2d& rigidbody2d::set_velocity(const Vector2& velocity)
+Rigidbody2D& Rigidbody2D::SetVelocity(const Vector2& velocity)
 {
 	velocity_ = velocity;
 	return *this;
 }
 
-rigidbody2d& rigidbody2d::rotateRight()
+Rigidbody2D& Rigidbody2D::RotateRight()
 {
 	velocity_ = Vector2(-velocity_.y, velocity_.x);
 	return *this;
 }
 
-rigidbody2d& rigidbody2d::rotateLeft()
+Rigidbody2D& Rigidbody2D::RotateLeft()
 {
 	velocity_ = Vector2(velocity_.y, -velocity_.x);
 	return *this;
 }
 
-rigidbody2d::rigidbody2d(const Vector2& velocity): velocity_(velocity)
+Rigidbody2D::Rigidbody2D(const Vector2& velocity): velocity_(velocity)
 {
 }
 
-rigidbody2d::rigidbody2d()
+Rigidbody2D::Rigidbody2D()
 {
-	rigidbody2d(Vector2(0,0));
+	Rigidbody2D(Vector2(0,0));
 }

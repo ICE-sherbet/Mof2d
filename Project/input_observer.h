@@ -9,11 +9,11 @@
 #define UP_KEY MOFKEY_UP
 #define DOWN_KEY MOFKEY_DOWN
 
-class input_observer : public Component
+class InputObserver final : public Component
 {
 
-    CVector2 move_vec = CVector2(0,0);
-    Vector2 dir;
+    CVector2 move_vec_ = CVector2(0,0);
+    Vector2 dir_;
 
 public:
 
@@ -21,8 +21,8 @@ public:
     subject<Vector2&>* mouse_observer = new subject<Vector2&>;
     subject<MofInt>* fire_observer =  new subject<MofInt>;
 
-    void update() override;
+    void Update() override;
 
-    ~input_observer();
+    ~InputObserver();
 };
 

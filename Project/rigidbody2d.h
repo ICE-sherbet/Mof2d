@@ -1,23 +1,33 @@
 #pragma once
 #include "rigidbody.h"
+#include "position.h"
 #include "Component.h"
 #include "Mof.h"
 
 //�ړ��ʂȂǂ�Ǘ�����N���X
-class rigidbody2d : public rigidbody,public Component
+class Rigidbody2D : public Rigidbody,public Component
 {
-	Vector2 velocity_;
+	Vector2 velocity_ = Vector2(0,0);
+	const Vector2* positon_ = nullptr;
 public:
-	Vector2 velocity() const;
+	Vector2 GetVelocity() const;
 
-	rigidbody2d& set_velocity(const Vector2& velocity);
+	Rigidbody2D& SetVelocity(const Vector2& velocity);
 
-	rigidbody2d& rotateRight();
+	Rigidbody2D& RotateRight();
 
-	rigidbody2d& rotateLeft();
+	Rigidbody2D& RotateLeft();
 
-	rigidbody2d(const Vector2& velocity);
+	Rigidbody2D(const Vector2& velocity);
 
-	rigidbody2d();
+	Rigidbody2D();
+	void Start() override
+	{
+		
+	}
+	void Update() override
+	{
+		
+	};
 };
 

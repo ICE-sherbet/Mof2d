@@ -1,65 +1,126 @@
 #pragma once
-#include <utility>
-
-#include "Mof.h"
-#include "array" 
-
-
+#include "vector"
+#include "Component.h"
+#include "IAnimatable.h"
+#include "SpriteRenderer.h"
 
 struct AnimationKeyFrame
 {
 	int frame_index = 0;
 	int next_frame_time = 1;
 };
+
 template<class T>
-class AnimationClip
+struct AnimationClipData
 {
-	std::vector<AnimationKeyFrame> frame_info_ = std::vector<AnimationKeyFrame>();
-	std::vector<T*> animation_frame_ = std::vector<T*>();
+	std::vector<AnimationKeyFrame> frame_info;
+	std::vector<T> animation_frame;
 	bool is_loop_ = false;
-	int now_frame_ = 0;
-	int wait_count_ = 0;
-public:
-	AnimationClip(std::vector<T*> frames):animation_frame_(std::move(frames)){}
-	AnimationClip(std::vector<T*> frames, std::vector<AnimationKeyFrame> info):
-		frame_info_(std::move(info)), animation_frame_(std::move(frames)) {}
-	void next_frame()
-	{
-		if(frame_info_[now_frame_].next_frame_time <= wait_count_)
-		{
-			
-		}
-
-		wait_count_++;
-	}
-	void change_frame(int target_index)
-	{
-		if (target_index < 0 && target_index >= animation_frame_.size())return;
-		now_frame_ = target_index;
-	}
-
+	T& GetFrame(const int index);
 };
 
 template<class T>
-class Animator
+class AnimationClip
+{
+	AnimationClipData<T> animation_clip_data_;
+	int now_frame_ = 0;
+	int wait_count_ = 0;
+public:
+	AnimationClip() {};
+
+	AnimationClip(AnimationClipData<T> info);
+	void SetClip(AnimationClipData<T> info)
+	{
+		animation_clip_data_ = info;
+	}
+	T& NextFrame();
+
+	void ChangeFrame(int target_index);
+
+	T& GetFrame();
+};
+
+
+template<class T>
+class Animator : public Component
 {
 protected:
 	std::vector<AnimationClip<T>> animation_clip_ = std::vector<AnimationClip<T>>();
 	int clip_num_ = 0;
 	T* target_ = nullptr;
 public:
-	void push_back(const AnimationClip<T>& clip)
-	{
-		animation_clip_.emplace_back(clip);
-	}
-	T* on_next_frame() override
-	{
-		if (animation_clip_.empty())return nullptr;
-		animation_clip_[clip_num_]
-		return target_;
-	}
-	T* get_frame() override
-	{
+	Animator(IAnimatable<T>* target);
+	void PushBack( AnimationClip<T> clip);
 
-	};
+	T& OnNextFrame();
+
+	T& GetFrame();
 };
+
+
+
+template <class T>
+T& AnimationClipData<T>::GetFrame(const int index)
+{
+	return animation_frame[frame_info[index].frame_index];
+}
+
+template <class T>
+AnimationClip<T>::AnimationClip(const AnimationClipData<T> info) :
+	animation_clip_data_(info)
+{}
+
+template <class T>
+T& AnimationClip<T>::NextFrame()
+{
+	if (animation_clip_data_.frame_info[now_frame_].next_frame_time <= ++wait_count_)
+	{
+		ChangeFrame(now_frame_ + 1);
+	}
+
+	return GetFrame();
+}
+
+template <class T>
+void AnimationClip<T>::ChangeFrame(int target_index)
+{
+	if (target_index < 0 && target_index >= animation_clip_data_.animation_frame.size())return;
+	wait_count_ = 0;
+	now_frame_ = target_index;
+	now_frame_ %= animation_clip_data_.animation_frame.size();
+}
+
+template <class T>
+T& AnimationClip<T>::GetFrame()
+{
+	return animation_clip_data_.GetFrame(now_frame_);
+}
+
+template <class T>
+Animator<T>::Animator(IAnimatable<T>* target)
+{
+	target_ = target->GetTarget();
+}
+
+template <class T>
+void Animator<T>::PushBack(AnimationClip<T> clip)
+{
+	animation_clip_.emplace_back(clip);
+	*target_ = clip.NextFrame();
+	int a = 1;
+}
+
+template <class T>
+T& Animator<T>::OnNextFrame()
+{
+	if (animation_clip_.empty())return nullptr;
+	*target_ = &animation_clip_[clip_num_].NextFrame();
+
+	return target_;
+}
+
+template <class T>
+T& Animator<T>::GetFrame()
+{
+	return target_;
+}

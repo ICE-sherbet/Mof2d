@@ -5,22 +5,22 @@
 class Component;
 
 //オブジェクトクラス
-class object
+class Object
 {
 	std::list<Component*> components_;
 public:
-	object();
+	Object();
 
-	~object();
+	~Object();
 
-	void start();
+	void Start();
 
-	void update();
+	void Update();
 
-	void render();
+	void Render();
 
 	template <typename type>
-	type* get_component()
+	type* GetComponent()
 	{
 		for (auto elem : components_)
 		{
@@ -31,7 +31,7 @@ public:
 	}
 
 	template <typename type>
-	type* add_component()
+	type* AddComponent()
 	{
 		type* buff = new type();
 		buff->parent_ = this;
@@ -40,7 +40,7 @@ public:
 	}
 
 	template <typename type>
-	type* add_component(type* component)
+	type* AddComponent(type* component)
 	{
 
 		component->parent_ = this;

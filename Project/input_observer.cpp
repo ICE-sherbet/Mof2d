@@ -1,6 +1,6 @@
 #include "input_observer.h"
 
-void input_observer::update()
+void InputObserver::Update()
 {
 	g_pInput->RefreshKey();
 
@@ -15,17 +15,17 @@ void input_observer::update()
 		g_pInput->GetMousePos(pos);
 		mouse_observer->OnNext(pos);
 	}
-	if(g_pInput->IsKeyHold(LEFT_KEY))move_vec.x -= 1;
-	if(g_pInput->IsKeyHold(RIGHT_KEY))move_vec.x += 1;
-	if(g_pInput->IsKeyHold(UP_KEY))move_vec.y -= 1;
-	if(g_pInput->IsKeyHold(DOWN_KEY))move_vec.y += 1;
-	if(move_vec.x == 0 && move_vec.x == move_vec.y)return;
-	dir = move_vec / move_vec.Length();
-	move_observer->OnNext(dir);
-	move_vec = Vector2(0, 0);
+	if(g_pInput->IsKeyHold(LEFT_KEY))move_vec_.x -= 1;
+	if(g_pInput->IsKeyHold(RIGHT_KEY))move_vec_.x += 1;
+	if(g_pInput->IsKeyHold(UP_KEY))move_vec_.y -= 1;
+	if(g_pInput->IsKeyHold(DOWN_KEY))move_vec_.y += 1;
+	if(move_vec_.x == 0 && move_vec_.x == move_vec_.y)return;
+	dir_ = move_vec_ / move_vec_.Length();
+	move_observer->OnNext(dir_);
+	move_vec_ = Vector2(0, 0);
 }
 
-input_observer::~input_observer()
+InputObserver::~InputObserver()
 {
 	delete move_observer;
 	delete mouse_observer;

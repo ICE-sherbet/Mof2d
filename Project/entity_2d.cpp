@@ -14,8 +14,6 @@ void Entity2D::Start()
 {
 
 	position_ = parent_->GetComponent<Position>();
-	rigidbody2d_ = parent_->GetComponent<Rigidbody2D>();
-	sprite_ = parent_->GetComponent<SpriteRenderer>();
 
 }
 
@@ -29,8 +27,4 @@ Entity2D& Entity2D::Move(const Vector2 dir)
 {
     position_->Move(dir);
     return *this;
-}
-
-SpriteRenderer *Entity2D::GetSprite() const {
-    return sprite_;
 }

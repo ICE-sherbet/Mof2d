@@ -36,6 +36,8 @@ add_executable(Project
         input_observer.cpp
         input_observer.h
         collider_2d_box.cpp
-        sprite_2d.cpp
+        Sprite.cpp
+        Sprite.h
+        kadai3.h
         kadai3.cpp
         )

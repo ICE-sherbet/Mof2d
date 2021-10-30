@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project
+CMAKE_SOURCE_DIR = D:\SchoolProgram\Mof2d-4\Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug
+CMAKE_BINARY_DIR = D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Project.dir/depend.make
@@ -68,142 +68,142 @@ include CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/component.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/component.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/component.cpp.obj: ../component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project.dir/component.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\component.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project.dir/component.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\component.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\component.cpp
 
 CMakeFiles/Project.dir/component.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/component.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\component.cpp > CMakeFiles\Project.dir\component.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\component.cpp > CMakeFiles\Project.dir\component.cpp.i
 
 CMakeFiles/Project.dir/component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/component.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\component.cpp -o CMakeFiles\Project.dir\component.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\component.cpp -o CMakeFiles\Project.dir\component.cpp.s
 
 CMakeFiles/Project.dir/entity_2d.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/entity_2d.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/entity_2d.cpp.obj: ../entity_2d.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/entity_2d.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\entity_2d.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\entity_2d.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/entity_2d.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\entity_2d.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\entity_2d.cpp
 
 CMakeFiles/Project.dir/entity_2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/entity_2d.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\entity_2d.cpp > CMakeFiles\Project.dir\entity_2d.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\entity_2d.cpp > CMakeFiles\Project.dir\entity_2d.cpp.i
 
 CMakeFiles/Project.dir/entity_2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/entity_2d.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\entity_2d.cpp -o CMakeFiles\Project.dir\entity_2d.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\entity_2d.cpp -o CMakeFiles\Project.dir\entity_2d.cpp.s
 
 CMakeFiles/Project.dir/GameApp.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/GameApp.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/GameApp.cpp.obj: ../GameApp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/GameApp.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\GameApp.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\GameApp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/GameApp.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\GameApp.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\GameApp.cpp
 
 CMakeFiles/Project.dir/GameApp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/GameApp.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\GameApp.cpp > CMakeFiles\Project.dir\GameApp.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\GameApp.cpp > CMakeFiles\Project.dir\GameApp.cpp.i
 
 CMakeFiles/Project.dir/GameApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/GameApp.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\GameApp.cpp -o CMakeFiles\Project.dir\GameApp.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\GameApp.cpp -o CMakeFiles\Project.dir\GameApp.cpp.s
 
 CMakeFiles/Project.dir/object.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/object.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/object.cpp.obj: ../object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/object.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\object.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/object.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\object.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\object.cpp
 
 CMakeFiles/Project.dir/object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/object.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\object.cpp > CMakeFiles\Project.dir\object.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\object.cpp > CMakeFiles\Project.dir\object.cpp.i
 
 CMakeFiles/Project.dir/object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/object.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\object.cpp -o CMakeFiles\Project.dir\object.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\object.cpp -o CMakeFiles\Project.dir\object.cpp.s
 
 CMakeFiles/Project.dir/position.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/position.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/position.cpp.obj: ../position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/position.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\position.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/position.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\position.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\position.cpp
 
 CMakeFiles/Project.dir/position.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/position.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\position.cpp > CMakeFiles\Project.dir\position.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\position.cpp > CMakeFiles\Project.dir\position.cpp.i
 
 CMakeFiles/Project.dir/position.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/position.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\position.cpp -o CMakeFiles\Project.dir\position.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\position.cpp -o CMakeFiles\Project.dir\position.cpp.s
 
 CMakeFiles/Project.dir/WinMain.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/WinMain.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/WinMain.cpp.obj: ../WinMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/WinMain.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\WinMain.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\WinMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/WinMain.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\WinMain.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\WinMain.cpp
 
 CMakeFiles/Project.dir/WinMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/WinMain.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\WinMain.cpp > CMakeFiles\Project.dir\WinMain.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\WinMain.cpp > CMakeFiles\Project.dir\WinMain.cpp.i
 
 CMakeFiles/Project.dir/WinMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/WinMain.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\WinMain.cpp -o CMakeFiles\Project.dir\WinMain.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\WinMain.cpp -o CMakeFiles\Project.dir\WinMain.cpp.s
 
 CMakeFiles/Project.dir/input_observer.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/input_observer.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/input_observer.cpp.obj: ../input_observer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/input_observer.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\input_observer.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\input_observer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/input_observer.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\input_observer.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\input_observer.cpp
 
 CMakeFiles/Project.dir/input_observer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/input_observer.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\input_observer.cpp > CMakeFiles\Project.dir\input_observer.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\input_observer.cpp > CMakeFiles\Project.dir\input_observer.cpp.i
 
 CMakeFiles/Project.dir/input_observer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/input_observer.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\input_observer.cpp -o CMakeFiles\Project.dir\input_observer.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\input_observer.cpp -o CMakeFiles\Project.dir\input_observer.cpp.s
 
 CMakeFiles/Project.dir/collider_2d_box.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/collider_2d_box.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/collider_2d_box.cpp.obj: ../collider_2d_box.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project.dir/collider_2d_box.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\collider_2d_box.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\collider_2d_box.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project.dir/collider_2d_box.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\collider_2d_box.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\collider_2d_box.cpp
 
 CMakeFiles/Project.dir/collider_2d_box.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/collider_2d_box.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\collider_2d_box.cpp > CMakeFiles\Project.dir\collider_2d_box.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\collider_2d_box.cpp > CMakeFiles\Project.dir\collider_2d_box.cpp.i
 
 CMakeFiles/Project.dir/collider_2d_box.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/collider_2d_box.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\collider_2d_box.cpp -o CMakeFiles\Project.dir\collider_2d_box.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\collider_2d_box.cpp -o CMakeFiles\Project.dir\collider_2d_box.cpp.s
 
-CMakeFiles/Project.dir/sprite_2d.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/sprite_2d.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
-CMakeFiles/Project.dir/sprite_2d.cpp.obj: ../sprite_2d.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project.dir/sprite_2d.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\sprite_2d.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\sprite_2d.cpp
+CMakeFiles/Project.dir/Sprite.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Sprite.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
+CMakeFiles/Project.dir/Sprite.cpp.obj: ../Sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project.dir/Sprite.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\Sprite.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\Sprite.cpp
 
-CMakeFiles/Project.dir/sprite_2d.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/sprite_2d.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\sprite_2d.cpp > CMakeFiles\Project.dir\sprite_2d.cpp.i
+CMakeFiles/Project.dir/Sprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Sprite.cpp.i"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\Sprite.cpp > CMakeFiles\Project.dir\Sprite.cpp.i
 
-CMakeFiles/Project.dir/sprite_2d.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/sprite_2d.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\sprite_2d.cpp -o CMakeFiles\Project.dir\sprite_2d.cpp.s
+CMakeFiles/Project.dir/Sprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Sprite.cpp.s"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\Sprite.cpp -o CMakeFiles\Project.dir\Sprite.cpp.s
 
 CMakeFiles/Project.dir/kadai3.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/kadai3.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/kadai3.cpp.obj: ../kadai3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project.dir/kadai3.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\kadai3.cpp.obj -c D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\kadai3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project.dir/kadai3.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\kadai3.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\kadai3.cpp
 
 CMakeFiles/Project.dir/kadai3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/kadai3.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\kadai3.cpp > CMakeFiles\Project.dir\kadai3.cpp.i
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\kadai3.cpp > CMakeFiles\Project.dir\kadai3.cpp.i
 
 CMakeFiles/Project.dir/kadai3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/kadai3.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\kadai3.cpp -o CMakeFiles\Project.dir\kadai3.cpp.s
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\kadai3.cpp -o CMakeFiles\Project.dir\kadai3.cpp.s
 
 # Object files for target Project
 Project_OBJECTS = \
@@ -215,7 +215,7 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/WinMain.cpp.obj" \
 "CMakeFiles/Project.dir/input_observer.cpp.obj" \
 "CMakeFiles/Project.dir/collider_2d_box.cpp.obj" \
-"CMakeFiles/Project.dir/sprite_2d.cpp.obj" \
+"CMakeFiles/Project.dir/Sprite.cpp.obj" \
 "CMakeFiles/Project.dir/kadai3.cpp.obj"
 
 # External object files for target Project
@@ -229,13 +229,13 @@ Project.exe: CMakeFiles/Project.dir/position.cpp.obj
 Project.exe: CMakeFiles/Project.dir/WinMain.cpp.obj
 Project.exe: CMakeFiles/Project.dir/input_observer.cpp.obj
 Project.exe: CMakeFiles/Project.dir/collider_2d_box.cpp.obj
-Project.exe: CMakeFiles/Project.dir/sprite_2d.cpp.obj
+Project.exe: CMakeFiles/Project.dir/Sprite.cpp.obj
 Project.exe: CMakeFiles/Project.dir/kadai3.cpp.obj
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/linklibs.rsp
 Project.exe: CMakeFiles/Project.dir/objects1.rsp
 Project.exe: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -247,6 +247,6 @@ CMakeFiles/Project.dir/clean:
 .PHONY : CMakeFiles/Project.dir/clean
 
 CMakeFiles/Project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles\Project.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\SchoolProgram\Mof2d-4\Project D:\SchoolProgram\Mof2d-4\Project D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles\Project.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Project.dir/depend
 

@@ -4,11 +4,11 @@ void InputObserver::Update()
 {
 	g_pInput->RefreshKey();
 
-	if (g_pInput->IsKeyPush(MOFKEY_A))fire_observer->OnNext(MOFKEY_A);
-	if (g_pInput->IsKeyPush(MOFKEY_W))fire_observer->OnNext(MOFKEY_W);
-	if (g_pInput->IsKeyPush(MOFKEY_S))fire_observer->OnNext(MOFKEY_S);
-	if (g_pInput->IsKeyPush(MOFKEY_D))fire_observer->OnNext(MOFKEY_D);
-	if (g_pInput->IsKeyPush(MOFKEY_SPACE))fire_observer->OnNext(MOFKEY_SPACE);
+    IsKeyPush<MOFKEY_A>();
+    IsKeyPush<MOFKEY_W>();
+    IsKeyPush<MOFKEY_S>();
+    IsKeyPush<MOFKEY_D>();
+    IsKeyPush<MOFKEY_SPACE>();
 
 	if(g_pInput->IsMouseKeyPush(MOFMOUSE_LBUTTON)){
 		Vector2 pos;
@@ -31,3 +31,4 @@ InputObserver::~InputObserver()
 	delete mouse_observer;
 	delete fire_observer;
 }
+

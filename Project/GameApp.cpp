@@ -57,11 +57,10 @@ MofBool CGameApp::Initialize(void){
 	objct_list_[0]->AddComponent<Position>(new Position(g_pGraphics->GetTargetWidth() / 2, g_pGraphics->GetTargetHeight() / 2));
 	objct_list_[1]->AddComponent<Position>(new Position(0,0));
 	auto sprite_render = objct_list_[0]->AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[0]);
-	objct_list_[1]->AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[1]);
-	auto n = new Animator<const Sprite*>(&sprite_render);
-
-	objct_list_[0]->AddComponent(n)->PushBack(clip);
-
+	objct_list_[1]->AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[2]);
+	auto animator = new Animator<const Sprite*>(&sprite_render);
+    objct_list_[0]->AddComponent(animator)->PushBack(clip);
+    kadai.animator_ = animator;
 	objct_list_[0]->Start();
 	objct_list_[1]->Start();
 

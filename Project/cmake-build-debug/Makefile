@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project
+CMAKE_SOURCE_DIR = D:\SchoolProgram\Mof2d-4\Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug
+CMAKE_BINARY_DIR = D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Projec
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\ICE\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\SchoolProgram\1F09SP_林愛守_課題2_移動処理\Project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -151,6 +151,30 @@ GameApp.s: GameApp.cpp.s
 GameApp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/GameApp.cpp.s
 .PHONY : GameApp.cpp.s
+
+Sprite.obj: Sprite.cpp.obj
+.PHONY : Sprite.obj
+
+# target to build an object file
+Sprite.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Sprite.cpp.obj
+.PHONY : Sprite.cpp.obj
+
+Sprite.i: Sprite.cpp.i
+.PHONY : Sprite.i
+
+# target to preprocess a source file
+Sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Sprite.cpp.i
+.PHONY : Sprite.cpp.i
+
+Sprite.s: Sprite.cpp.s
+.PHONY : Sprite.s
+
+# target to generate assembly for a file
+Sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Sprite.cpp.s
+.PHONY : Sprite.cpp.s
 
 WinMain.obj: WinMain.cpp.obj
 .PHONY : WinMain.obj
@@ -344,30 +368,6 @@ position.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/position.cpp.s
 .PHONY : position.cpp.s
 
-sprite_2d.obj: sprite_2d.cpp.obj
-.PHONY : sprite_2d.obj
-
-# target to build an object file
-sprite_2d.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/sprite_2d.cpp.obj
-.PHONY : sprite_2d.cpp.obj
-
-sprite_2d.i: sprite_2d.cpp.i
-.PHONY : sprite_2d.i
-
-# target to preprocess a source file
-sprite_2d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/sprite_2d.cpp.i
-.PHONY : sprite_2d.cpp.i
-
-sprite_2d.s: sprite_2d.cpp.s
-.PHONY : sprite_2d.s
-
-# target to generate assembly for a file
-sprite_2d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/sprite_2d.cpp.s
-.PHONY : sprite_2d.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -380,6 +380,9 @@ help:
 	@echo ... GameApp.obj
 	@echo ... GameApp.i
 	@echo ... GameApp.s
+	@echo ... Sprite.obj
+	@echo ... Sprite.i
+	@echo ... Sprite.s
 	@echo ... WinMain.obj
 	@echo ... WinMain.i
 	@echo ... WinMain.s
@@ -404,9 +407,6 @@ help:
 	@echo ... position.obj
 	@echo ... position.i
 	@echo ... position.s
-	@echo ... sprite_2d.obj
-	@echo ... sprite_2d.i
-	@echo ... sprite_2d.s
 .PHONY : help
 
 

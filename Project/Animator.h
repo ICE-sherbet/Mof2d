@@ -1,6 +1,6 @@
 #pragma once
 #include "vector"
-#include "Component.h"
+#include "component.h"
 #include "IAnimatable.h"
 #include "SpriteRenderer.h"
 
@@ -52,7 +52,7 @@ public:
 	Animator(IAnimatable<T>* target);
 	void PushBack( AnimationClip<T> clip);
 
-	T& OnNextFrame();
+	void OnNextFrame();
 
 	T& GetFrame();
 };
@@ -106,17 +106,14 @@ template <class T>
 void Animator<T>::PushBack(AnimationClip<T> clip)
 {
 	animation_clip_.emplace_back(clip);
-	*target_ = clip.NextFrame();
 	int a = 1;
 }
 
 template <class T>
-T& Animator<T>::OnNextFrame()
+void Animator<T>::OnNextFrame()
 {
-	if (animation_clip_.empty())return nullptr;
-	*target_ = &animation_clip_[clip_num_].NextFrame();
-
-	return target_;
+	if (animation_clip_.empty())return;
+	*target_ = animation_clip_[clip_num_].NextFrame();
 }
 
 template <class T>

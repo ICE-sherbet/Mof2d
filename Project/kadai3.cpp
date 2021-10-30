@@ -32,7 +32,7 @@ void kadai3::KeyFire(MofInt key)
 
 void kadai3::MouseLeftClick()
 {
-	//entity[0]->GetSprite()->NextSprite();
+    animator_->OnNextFrame();
 }
 
 void kadai3::push(Entity2D* elem) {

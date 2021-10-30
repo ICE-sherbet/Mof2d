@@ -1,5 +1,7 @@
 #pragma once
-#include "componen_headert.h"
+#include "position.h"
+#include "input_observer.h"
+#include "component.h"
 #include "Mof.h"
 
 //画像とオブジェクトに付属するコンポーネントを管理するクラス
@@ -7,9 +9,6 @@
 class Entity2D : public Component
 {
 	Position* position_ = nullptr;
-	Collider2DBox* collision_ = nullptr;
-	Rigidbody2D* rigidbody2d_ = nullptr;
-    SpriteRenderer* sprite_ = nullptr;
     InputObserver* input_ = nullptr;
     bool can_control_ = false;
 public:
@@ -21,7 +20,6 @@ public:
     void SetInput(InputObserver* input);
     Entity2D& Move(Vector2 dir);
 
-    SpriteRenderer* GetSprite() const;
 	void Update() override;
 	void Start() override;
 

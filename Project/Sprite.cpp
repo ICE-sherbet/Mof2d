@@ -2,22 +2,29 @@
 
 Sprite::Sprite(const LPTexture texture): texture_(texture)
 {
-	SetRect(CRectangle(Vector2(0,0),Vector2(texture->GetWidth(), texture->GetHeight())));
+	SetRect();
 }
 
 Sprite::Sprite(const LPTexture texture, const Vector2 pivot): texture_(texture),pivot_(pivot)
 {
-	SetRect(CRectangle(Vector2(0, 0), Vector2(texture->GetWidth(), texture->GetHeight())));
+	SetRect();
 }
 
 void Sprite::SetPivot(const Vector2 pivot)
 {
 	pivot_ = pivot;
 }
-
+void Sprite::SetRect()
+{
+    texture_rect_ = CRectangle(0,0,texture_->GetWidth(), texture_->GetHeight());
+    setSize();
+    setPivotDifference();
+}
 void Sprite::SetRect(CRectangle texture_rect)
 {
 	texture_rect_ = texture_rect;
+    setSize();
+    setPivotDifference();
 }
 
 void Sprite::Render(const CRectangle position_rectangle) const
@@ -27,8 +34,8 @@ void Sprite::Render(const CRectangle position_rectangle) const
 
 void Sprite::Render(const Vector2& position) const
 {
-	auto drag = texture_rect_ + position;
-	texture_->Render(drag - texture_rect_.GetBottomRight() * pivot_, texture_rect_);
+	auto drag = texture_rect_ - texture_rect_.GetTopLeft() + position - pivot_difference_;
+	texture_->Render(drag, texture_rect_);
 }
 
 Sprite& Sprite::TextureLoad(const LPCMofChar path)
@@ -45,4 +52,10 @@ Sprite& Sprite::TextureLoad(LPTexture texture)
 {
 	texture_ = texture;
 	return *this;
+}
+void Sprite::setSize() {
+    size_ = texture_rect_.GetBottomRight() - texture_rect_.GetTopLeft();
+}
+void Sprite::setPivotDifference() {
+    pivot_difference_ = size_ * pivot_;
 }

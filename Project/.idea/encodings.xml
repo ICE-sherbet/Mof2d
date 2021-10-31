@@ -3,7 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/GameApp.cpp" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/GameApp.h" charset="windows-31j" />
-    <file url="file://$PROJECT_DIR$/object.h" charset="windows-31j" />
+    <file url="file://$PROJECT_DIR$/Object.h" charset="windows-31j" />
     <file url="file://$PROJECT_DIR$/sprite_2d.h" charset="windows-31j" />
     <file url="PROJECT" charset="windows-31j" />
   </component>

@@ -31,12 +31,11 @@ MofBool CGameApp::Initialize(void){
 	//リソースフォルダを指定
 	CUtilities::SetCurrentDirectoryA("Resource");
 
-	world = new Object();
+	world = new GameObject();
 	world->AddComponent<Position>(new Position(0,0));
 	input_observer_ = world->AddComponent<InputObserver>();
 	auto& kadai = world->AddComponent<kadai3>()->set_input_(input_observer_);
 	world->Start();
-	
 
 	g_texture->Load("texture01.png");
 	g_texture2->Load("texture02.png");
@@ -50,8 +49,8 @@ MofBool CGameApp::Initialize(void){
 	
 	for (auto &obj: objct_list_) 
 	{
-		obj = new Object();
-        obj->AddComponent<Rigidbody2D>();
+		obj = new GameObject();
+        obj->AddComponent<RigidBody2D>();
 		kadai.push(obj->AddComponent<Entity2D>());
 	}
 	objct_list_[0]->AddComponent<Position>(new Position(g_pGraphics->GetTargetWidth() / 2, g_pGraphics->GetTargetHeight() / 2));

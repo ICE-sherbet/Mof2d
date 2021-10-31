@@ -1,33 +1,44 @@
-#include "Rigidbody2D.h"
+#include "RigidBody2D.h"
 
-Vector2 Rigidbody2D::GetVelocity() const
+Vector2 RigidBody2D::GetVelocity() const
 {
 	return velocity_;
 }
 
-Rigidbody2D& Rigidbody2D::SetVelocity(const Vector2& velocity)
+RigidBody2D& RigidBody2D::SetVelocity(const Vector2& velocity)
 {
 	velocity_ = velocity;
 	return *this;
 }
 
-Rigidbody2D& Rigidbody2D::RotateRight()
+RigidBody2D& RigidBody2D::RotateRight()
 {
 	velocity_ = Vector2(-velocity_.y, velocity_.x);
 	return *this;
 }
 
-Rigidbody2D& Rigidbody2D::RotateLeft()
+RigidBody2D& RigidBody2D::RotateLeft()
 {
 	velocity_ = Vector2(velocity_.y, -velocity_.x);
 	return *this;
 }
 
-Rigidbody2D::Rigidbody2D(const Vector2& velocity): velocity_(velocity)
+RigidBody2D::RigidBody2D(const Vector2& velocity): velocity_(velocity)
 {
 }
 
-Rigidbody2D::Rigidbody2D()
+RigidBody2D::RigidBody2D()
 {
-	Rigidbody2D(Vector2(0,0));
+	RigidBody2D(Vector2(0,0));
+}
+
+void RigidBody2D::Start()
+{
+	position_ = parent_->GetComponent<Position>();
+}
+
+void RigidBody2D::Update()
+{
+	if (velocity_.x == velocity_.y == 0)return;
+	position_->Move(velocity_);
 }

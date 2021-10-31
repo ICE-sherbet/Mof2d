@@ -128,6 +128,30 @@ Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
+Component.obj: Component.cpp.obj
+.PHONY : Component.obj
+
+# target to build an object file
+Component.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Component.cpp.obj
+.PHONY : Component.cpp.obj
+
+Component.i: Component.cpp.i
+.PHONY : Component.i
+
+# target to preprocess a source file
+Component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Component.cpp.i
+.PHONY : Component.cpp.i
+
+Component.s: Component.cpp.s
+.PHONY : Component.s
+
+# target to generate assembly for a file
+Component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Component.cpp.s
+.PHONY : Component.cpp.s
+
 GameApp.obj: GameApp.cpp.obj
 .PHONY : GameApp.obj
 
@@ -151,6 +175,78 @@ GameApp.s: GameApp.cpp.s
 GameApp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/GameApp.cpp.s
 .PHONY : GameApp.cpp.s
+
+GameObject.obj: GameObject.cpp.obj
+.PHONY : GameObject.obj
+
+# target to build an object file
+GameObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/GameObject.cpp.obj
+.PHONY : GameObject.cpp.obj
+
+GameObject.i: GameObject.cpp.i
+.PHONY : GameObject.i
+
+# target to preprocess a source file
+GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/GameObject.cpp.i
+.PHONY : GameObject.cpp.i
+
+GameObject.s: GameObject.cpp.s
+.PHONY : GameObject.s
+
+# target to generate assembly for a file
+GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/GameObject.cpp.s
+.PHONY : GameObject.cpp.s
+
+Object.obj: Object.cpp.obj
+.PHONY : Object.obj
+
+# target to build an object file
+Object.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Object.cpp.obj
+.PHONY : Object.cpp.obj
+
+Object.i: Object.cpp.i
+.PHONY : Object.i
+
+# target to preprocess a source file
+Object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Object.cpp.i
+.PHONY : Object.cpp.i
+
+Object.s: Object.cpp.s
+.PHONY : Object.s
+
+# target to generate assembly for a file
+Object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Object.cpp.s
+.PHONY : Object.cpp.s
+
+Scene.obj: Scene.cpp.obj
+.PHONY : Scene.obj
+
+# target to build an object file
+Scene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Scene.cpp.obj
+.PHONY : Scene.cpp.obj
+
+Scene.i: Scene.cpp.i
+.PHONY : Scene.i
+
+# target to preprocess a source file
+Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Scene.cpp.i
+.PHONY : Scene.cpp.i
+
+Scene.s: Scene.cpp.s
+.PHONY : Scene.s
+
+# target to generate assembly for a file
+Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Scene.cpp.s
+.PHONY : Scene.cpp.s
 
 Sprite.obj: Sprite.cpp.obj
 .PHONY : Sprite.obj
@@ -224,30 +320,6 @@ collider_2d_box.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/collider_2d_box.cpp.s
 .PHONY : collider_2d_box.cpp.s
 
-component.obj: component.cpp.obj
-.PHONY : component.obj
-
-# target to build an object file
-component.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/component.cpp.obj
-.PHONY : component.cpp.obj
-
-component.i: component.cpp.i
-.PHONY : component.i
-
-# target to preprocess a source file
-component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/component.cpp.i
-.PHONY : component.cpp.i
-
-component.s: component.cpp.s
-.PHONY : component.s
-
-# target to generate assembly for a file
-component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/component.cpp.s
-.PHONY : component.cpp.s
-
 entity_2d.obj: entity_2d.cpp.obj
 .PHONY : entity_2d.obj
 
@@ -320,29 +392,29 @@ kadai3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/kadai3.cpp.s
 .PHONY : kadai3.cpp.s
 
-object.obj: object.cpp.obj
-.PHONY : object.obj
+kadai4.obj: kadai4.cpp.obj
+.PHONY : kadai4.obj
 
 # target to build an object file
-object.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/object.cpp.obj
-.PHONY : object.cpp.obj
+kadai4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/kadai4.cpp.obj
+.PHONY : kadai4.cpp.obj
 
-object.i: object.cpp.i
-.PHONY : object.i
+kadai4.i: kadai4.cpp.i
+.PHONY : kadai4.i
 
 # target to preprocess a source file
-object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/object.cpp.i
-.PHONY : object.cpp.i
+kadai4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/kadai4.cpp.i
+.PHONY : kadai4.cpp.i
 
-object.s: object.cpp.s
-.PHONY : object.s
+kadai4.s: kadai4.cpp.s
+.PHONY : kadai4.s
 
 # target to generate assembly for a file
-object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/object.cpp.s
-.PHONY : object.cpp.s
+kadai4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/kadai4.cpp.s
+.PHONY : kadai4.cpp.s
 
 position.obj: position.cpp.obj
 .PHONY : position.obj
@@ -377,9 +449,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Project
+	@echo ... Component.obj
+	@echo ... Component.i
+	@echo ... Component.s
 	@echo ... GameApp.obj
 	@echo ... GameApp.i
 	@echo ... GameApp.s
+	@echo ... GameObject.obj
+	@echo ... GameObject.i
+	@echo ... GameObject.s
+	@echo ... Object.obj
+	@echo ... Object.i
+	@echo ... Object.s
+	@echo ... Scene.obj
+	@echo ... Scene.i
+	@echo ... Scene.s
 	@echo ... Sprite.obj
 	@echo ... Sprite.i
 	@echo ... Sprite.s
@@ -389,9 +473,6 @@ help:
 	@echo ... collider_2d_box.obj
 	@echo ... collider_2d_box.i
 	@echo ... collider_2d_box.s
-	@echo ... component.obj
-	@echo ... component.i
-	@echo ... component.s
 	@echo ... entity_2d.obj
 	@echo ... entity_2d.i
 	@echo ... entity_2d.s
@@ -401,9 +482,9 @@ help:
 	@echo ... kadai3.obj
 	@echo ... kadai3.i
 	@echo ... kadai3.s
-	@echo ... object.obj
-	@echo ... object.i
-	@echo ... object.s
+	@echo ... kadai4.obj
+	@echo ... kadai4.i
+	@echo ... kadai4.s
 	@echo ... position.obj
 	@echo ... position.i
 	@echo ... position.s

@@ -1,15 +1,16 @@
 #pragma once
-#include "object.h"
-class Object;
+#include "GameObject.h"
+#include "Object.h"
+class GameObject;
 
 //コンポーネントクラス
 class Component
 {
 public:
-	virtual ~Component() {}
-	Object* parent_ = nullptr;
-	virtual void Start() {}
-	virtual void Update() {}
-	virtual void Render() {}
+	virtual ~Component();
+	GameObject* parent_ = nullptr;
+	void virtual Start();
+	void virtual Update();
+	void virtual Render();
 };
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "object.h"
+#include "Component.h"
 #include "Mof.h"
 #include "Subject.h"
 

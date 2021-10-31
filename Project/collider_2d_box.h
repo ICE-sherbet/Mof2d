@@ -11,7 +11,7 @@ class Collider2DBox : public Collider2D, public Component
 	//デバッグ表示用
 	bool is_debug_ = false;
 public:
-	subject<Object&>* hit_objects = new subject<Object&>();
+	subject<GameObject&>* hit_objects = new subject<GameObject&>();
 	CRectangle ColliderRectangle() const;
 
 	Collider2DBox& SetDebug(bool debug);

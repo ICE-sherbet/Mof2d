@@ -10,7 +10,6 @@ class Entity2D : public Component
 {
 	Position* position_ = nullptr;
     InputObserver* input_ = nullptr;
-    bool can_control_ = false;
 public:
     Entity2D()
     {

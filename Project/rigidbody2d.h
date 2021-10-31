@@ -4,30 +4,25 @@
 #include "Component.h"
 #include "Mof.h"
 
-//�ړ��ʂȂǂ�Ǘ�����N���X
-class Rigidbody2D : public Rigidbody,public Component
+
+class RigidBody2D final : public Rigidbody,public Component
 {
 	Vector2 velocity_ = Vector2(0,0);
-	const Vector2* positon_ = nullptr;
+	Position* position_ = nullptr;
 public:
 	Vector2 GetVelocity() const;
 
-	Rigidbody2D& SetVelocity(const Vector2& velocity);
+	RigidBody2D& SetVelocity(const Vector2& velocity);
 
-	Rigidbody2D& RotateRight();
+	RigidBody2D& RotateRight();
 
-	Rigidbody2D& RotateLeft();
+	RigidBody2D& RotateLeft();
 
-	Rigidbody2D(const Vector2& velocity);
+	RigidBody2D(const Vector2& velocity);
 
-	Rigidbody2D();
-	void Start() override
-	{
-		
-	}
-	void Update() override
-	{
-		
-	};
+	RigidBody2D();
+	void Start() override;
+
+	void Update() override;;
 };
 

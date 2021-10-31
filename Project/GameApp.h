@@ -21,8 +21,8 @@
 @author	濱田　享
 *//********************************/
 class CGameApp : public CSingleGameApplication {
-	std::vector<Object*> objct_list_ = std::vector<Object*>(2);//オブジェクト
-	Object* world;
+	std::vector<GameObject*> objct_list_ = std::vector<GameObject*>(2);//オブジェクト
+	GameObject* world;
 public:
 	/*************************************************************************//*!
 			@brief			コンストラクタ

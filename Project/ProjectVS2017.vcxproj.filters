@@ -33,7 +33,7 @@
     <ClCompile Include="WinMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="object.cpp">
+    <ClCompile Include="GameObject.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="entity_2d.cpp">
@@ -51,7 +51,7 @@
     <ClCompile Include="collider_2d.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Rigidbody2D.cpp">
+    <ClCompile Include="RigidBody2D.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
     <ClCompile Include="rigidbody.cpp">
@@ -75,6 +75,15 @@
     <ClCompile Include="SpriteManager.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="kadai4.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Subject.h">
@@ -83,7 +92,7 @@
     <ClInclude Include="GameApp.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="object.h">
+    <ClInclude Include="GameObject.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="entity_2d.h">
@@ -101,7 +110,7 @@
     <ClInclude Include="collider_2d.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Rigidbody2D.h">
+    <ClInclude Include="RigidBody2D.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
     <ClInclude Include="rigidbody.h">
@@ -130,6 +139,15 @@
     </ClInclude>
     <ClInclude Include="IAnimatable.h">
       <Filter>ヘッダー ファイル\Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="kadai4.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -94,10 +94,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Component.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Component.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/GameApp.cpp">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/GameApp.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/GameObject.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/GameObject.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Mylibrary/Include/HSV.h">
@@ -106,7 +118,19 @@
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Mylibrary/Include/RGBA.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Object.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Object.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Observer.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Scene.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Scene.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/Sprite.cpp">
@@ -130,9 +154,6 @@
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/collider_2d_box.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/component.cpp">
-			<Option target="Project"/>
-		</Unit>
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/component.h">
 			<Option target="Project"/>
 		</Unit>
@@ -154,10 +175,10 @@
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/kadai3.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/object.cpp">
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/kadai4.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/object.h">
+		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/kadai4.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="D:/SchoolProgram/Mof2d-4/Project/position.cpp">

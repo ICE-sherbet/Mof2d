@@ -65,19 +65,19 @@ include CMakeFiles/Project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Project.dir/flags.make
 
-CMakeFiles/Project.dir/component.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/component.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
-CMakeFiles/Project.dir/component.cpp.obj: ../component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project.dir/component.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\component.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\component.cpp
+CMakeFiles/Project.dir/Component.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Component.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
+CMakeFiles/Project.dir/Component.cpp.obj: ../Component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project.dir/Component.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\Component.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\Component.cpp
 
-CMakeFiles/Project.dir/component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/component.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\component.cpp > CMakeFiles\Project.dir\component.cpp.i
+CMakeFiles/Project.dir/Component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Component.cpp.i"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\Component.cpp > CMakeFiles\Project.dir\Component.cpp.i
 
-CMakeFiles/Project.dir/component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/component.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\component.cpp -o CMakeFiles\Project.dir\component.cpp.s
+CMakeFiles/Project.dir/Component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Component.cpp.s"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\Component.cpp -o CMakeFiles\Project.dir\Component.cpp.s
 
 CMakeFiles/Project.dir/entity_2d.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/entity_2d.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
@@ -107,24 +107,38 @@ CMakeFiles/Project.dir/GameApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/GameApp.cpp.s"
 	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\GameApp.cpp -o CMakeFiles\Project.dir\GameApp.cpp.s
 
-CMakeFiles/Project.dir/object.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/object.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
-CMakeFiles/Project.dir/object.cpp.obj: ../object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/object.cpp.obj"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\object.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\object.cpp
+CMakeFiles/Project.dir/Object.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Object.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
+CMakeFiles/Project.dir/Object.cpp.obj: ../Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/Object.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\Object.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\Object.cpp
 
-CMakeFiles/Project.dir/object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/object.cpp.i"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\object.cpp > CMakeFiles\Project.dir\object.cpp.i
+CMakeFiles/Project.dir/Object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Object.cpp.i"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\Object.cpp > CMakeFiles\Project.dir\Object.cpp.i
 
-CMakeFiles/Project.dir/object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/object.cpp.s"
-	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\object.cpp -o CMakeFiles\Project.dir\object.cpp.s
+CMakeFiles/Project.dir/Object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Object.cpp.s"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\Object.cpp -o CMakeFiles\Project.dir\Object.cpp.s
+
+CMakeFiles/Project.dir/GameObject.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/GameObject.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
+CMakeFiles/Project.dir/GameObject.cpp.obj: ../GameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/GameObject.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\GameObject.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\GameObject.cpp
+
+CMakeFiles/Project.dir/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/GameObject.cpp.i"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\GameObject.cpp > CMakeFiles\Project.dir\GameObject.cpp.i
+
+CMakeFiles/Project.dir/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/GameObject.cpp.s"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\GameObject.cpp -o CMakeFiles\Project.dir\GameObject.cpp.s
 
 CMakeFiles/Project.dir/position.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/position.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/position.cpp.obj: ../position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/position.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/position.cpp.obj"
 	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\position.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\position.cpp
 
 CMakeFiles/Project.dir/position.cpp.i: cmake_force
@@ -138,7 +152,7 @@ CMakeFiles/Project.dir/position.cpp.s: cmake_force
 CMakeFiles/Project.dir/WinMain.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/WinMain.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/WinMain.cpp.obj: ../WinMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/WinMain.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/WinMain.cpp.obj"
 	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\WinMain.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\WinMain.cpp
 
 CMakeFiles/Project.dir/WinMain.cpp.i: cmake_force
@@ -152,7 +166,7 @@ CMakeFiles/Project.dir/WinMain.cpp.s: cmake_force
 CMakeFiles/Project.dir/input_observer.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/input_observer.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/input_observer.cpp.obj: ../input_observer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/input_observer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project.dir/input_observer.cpp.obj"
 	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\input_observer.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\input_observer.cpp
 
 CMakeFiles/Project.dir/input_observer.cpp.i: cmake_force
@@ -166,7 +180,7 @@ CMakeFiles/Project.dir/input_observer.cpp.s: cmake_force
 CMakeFiles/Project.dir/collider_2d_box.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/collider_2d_box.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/collider_2d_box.cpp.obj: ../collider_2d_box.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project.dir/collider_2d_box.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project.dir/collider_2d_box.cpp.obj"
 	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\collider_2d_box.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\collider_2d_box.cpp
 
 CMakeFiles/Project.dir/collider_2d_box.cpp.i: cmake_force
@@ -180,7 +194,7 @@ CMakeFiles/Project.dir/collider_2d_box.cpp.s: cmake_force
 CMakeFiles/Project.dir/Sprite.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/Sprite.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/Sprite.cpp.obj: ../Sprite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project.dir/Sprite.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project.dir/Sprite.cpp.obj"
 	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\Sprite.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\Sprite.cpp
 
 CMakeFiles/Project.dir/Sprite.cpp.i: cmake_force
@@ -194,7 +208,7 @@ CMakeFiles/Project.dir/Sprite.cpp.s: cmake_force
 CMakeFiles/Project.dir/kadai3.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/kadai3.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
 CMakeFiles/Project.dir/kadai3.cpp.obj: ../kadai3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project.dir/kadai3.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Project.dir/kadai3.cpp.obj"
 	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\kadai3.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\kadai3.cpp
 
 CMakeFiles/Project.dir/kadai3.cpp.i: cmake_force
@@ -205,37 +219,71 @@ CMakeFiles/Project.dir/kadai3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/kadai3.cpp.s"
 	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\kadai3.cpp -o CMakeFiles\Project.dir\kadai3.cpp.s
 
+CMakeFiles/Project.dir/kadai4.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/kadai4.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
+CMakeFiles/Project.dir/kadai4.cpp.obj: ../kadai4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Project.dir/kadai4.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\kadai4.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\kadai4.cpp
+
+CMakeFiles/Project.dir/kadai4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/kadai4.cpp.i"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\kadai4.cpp > CMakeFiles\Project.dir\kadai4.cpp.i
+
+CMakeFiles/Project.dir/kadai4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/kadai4.cpp.s"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\kadai4.cpp -o CMakeFiles\Project.dir\kadai4.cpp.s
+
+CMakeFiles/Project.dir/Scene.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Scene.cpp.obj: CMakeFiles/Project.dir/includes_CXX.rsp
+CMakeFiles/Project.dir/Scene.cpp.obj: ../Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Project.dir/Scene.cpp.obj"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\Scene.cpp.obj -c D:\SchoolProgram\Mof2d-4\Project\Scene.cpp
+
+CMakeFiles/Project.dir/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Scene.cpp.i"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\SchoolProgram\Mof2d-4\Project\Scene.cpp > CMakeFiles\Project.dir\Scene.cpp.i
+
+CMakeFiles/Project.dir/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Scene.cpp.s"
+	C:\MinGW64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\SchoolProgram\Mof2d-4\Project\Scene.cpp -o CMakeFiles\Project.dir\Scene.cpp.s
+
 # Object files for target Project
 Project_OBJECTS = \
-"CMakeFiles/Project.dir/component.cpp.obj" \
+"CMakeFiles/Project.dir/Component.cpp.obj" \
 "CMakeFiles/Project.dir/entity_2d.cpp.obj" \
 "CMakeFiles/Project.dir/GameApp.cpp.obj" \
-"CMakeFiles/Project.dir/object.cpp.obj" \
+"CMakeFiles/Project.dir/Object.cpp.obj" \
+"CMakeFiles/Project.dir/GameObject.cpp.obj" \
 "CMakeFiles/Project.dir/position.cpp.obj" \
 "CMakeFiles/Project.dir/WinMain.cpp.obj" \
 "CMakeFiles/Project.dir/input_observer.cpp.obj" \
 "CMakeFiles/Project.dir/collider_2d_box.cpp.obj" \
 "CMakeFiles/Project.dir/Sprite.cpp.obj" \
-"CMakeFiles/Project.dir/kadai3.cpp.obj"
+"CMakeFiles/Project.dir/kadai3.cpp.obj" \
+"CMakeFiles/Project.dir/kadai4.cpp.obj" \
+"CMakeFiles/Project.dir/Scene.cpp.obj"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
 
-Project.exe: CMakeFiles/Project.dir/component.cpp.obj
+Project.exe: CMakeFiles/Project.dir/Component.cpp.obj
 Project.exe: CMakeFiles/Project.dir/entity_2d.cpp.obj
 Project.exe: CMakeFiles/Project.dir/GameApp.cpp.obj
-Project.exe: CMakeFiles/Project.dir/object.cpp.obj
+Project.exe: CMakeFiles/Project.dir/Object.cpp.obj
+Project.exe: CMakeFiles/Project.dir/GameObject.cpp.obj
 Project.exe: CMakeFiles/Project.dir/position.cpp.obj
 Project.exe: CMakeFiles/Project.dir/WinMain.cpp.obj
 Project.exe: CMakeFiles/Project.dir/input_observer.cpp.obj
 Project.exe: CMakeFiles/Project.dir/collider_2d_box.cpp.obj
 Project.exe: CMakeFiles/Project.dir/Sprite.cpp.obj
 Project.exe: CMakeFiles/Project.dir/kadai3.cpp.obj
+Project.exe: CMakeFiles/Project.dir/kadai4.cpp.obj
+Project.exe: CMakeFiles/Project.dir/Scene.cpp.obj
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/linklibs.rsp
 Project.exe: CMakeFiles/Project.dir/objects1.rsp
 Project.exe: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\SchoolProgram\Mof2d-4\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

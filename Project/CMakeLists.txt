@@ -28,6 +28,8 @@ add_executable(Project
         GameApp.h
         object.cpp
         object.h
+        GameObject.cpp
+        GameObject.h
         Observer.h
         position.cpp
         position.h
@@ -40,4 +42,8 @@ add_executable(Project
         Sprite.h
         kadai3.h
         kadai3.cpp
+        kadai4.h
+        kadai4.cpp
+        Scene.h
+        Scene.cpp
         )

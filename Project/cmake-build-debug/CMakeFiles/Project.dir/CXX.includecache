@@ -3200,10 +3200,6 @@ D:/SchoolProgram/Mof2d-4/Project/Object.h
 
 D:/SchoolProgram/Mof2d-4/Project/IAnimatable.h
 
-D:/SchoolProgram/Mof2d-4/Project/Object.cpp
-Object.h
-D:/SchoolProgram/Mof2d-4/Project/Object.h
-
 D:/SchoolProgram/Mof2d-4/Project/Object.h
 
 D:/SchoolProgram/Mof2d-4/Project/RigidBody2D.h
@@ -3213,8 +3209,6 @@ position.h
 D:/SchoolProgram/Mof2d-4/Project/position.h
 Component.h
 D:/SchoolProgram/Mof2d-4/Project/component.h
-Mof.h
-D:/SchoolProgram/Mof2d-4/Project/Mof.h
 
 D:/SchoolProgram/Mof2d-4/Project/Scene.cpp
 Scene.h
@@ -3365,8 +3359,6 @@ D:/SchoolProgram/Mof2d-4/Project/position.h
 D:/SchoolProgram/Mof2d-4/Project/position.h
 Component.h
 D:/SchoolProgram/Mof2d-4/Project/component.h
-Mof.h
-D:/SchoolProgram/Mof2d-4/Project/Mof.h
 Subject.h
 D:/SchoolProgram/Mof2d-4/Project/Subject.h
 

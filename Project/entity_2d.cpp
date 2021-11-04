@@ -17,9 +17,9 @@ void Entity2D::Start()
 
 }
 
-void Entity2D::SetInput(InputObserver *input) {
+Entity2D& Entity2D::SetInput(InputObserver *input) {
     input_ = input;
-
+    return *this;
 
 }
 

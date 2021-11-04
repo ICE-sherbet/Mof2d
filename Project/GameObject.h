@@ -8,19 +8,29 @@ class Component;
 //オブジェクトクラス
 class GameObject final : public Object
 {
+	
+	Object* root_object_ = nullptr;
 	std::list<Component*> components_;
-	Object* parent_ = nullptr;
-	std::vector<GameObject*> child_{0};
+
 public:
+    GameObject(Object* parent);
 	GameObject();
 
 	~GameObject();
+
 
 	void Start() override;
 
 	void Update() override;
 
 	void Render() override;
+
+
+    GameObject& Instantiate(){
+        auto&& obj = new GameObject(this);
+        obj->Start();
+        return *obj;
+    }
 
 	template <typename type>
 	type* GetComponent();

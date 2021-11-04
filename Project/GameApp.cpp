@@ -19,7 +19,11 @@ CTexture* g_texture2 = new CTexture;
 
 SpriteManager sprite_manager_ = SpriteManager();
 
+Scene* root = new Scene;
+
 InputObserver* input_observer_;
+
+
 /*************************************************************************//*!
 		@brief			アプリケーションの初期化
 		@param			None
@@ -31,11 +35,10 @@ MofBool CGameApp::Initialize(void){
 	//リソースフォルダを指定
 	CUtilities::SetCurrentDirectoryA("Resource");
 
-	world = new GameObject();
-	world->AddComponent<Position>(new Position(0,0));
-	input_observer_ = world->AddComponent<InputObserver>();
-	auto& kadai = world->AddComponent<kadai3>()->set_input_(input_observer_);
-	world->Start();
+	auto& world = root->Instantiate();
+	world.AddComponent<Position>(new Position(0,0));
+	input_observer_ = world.AddComponent<InputObserver>();
+	auto& kadai = world.AddComponent<kadai3>()->set_input_(input_observer_);
 
 	g_texture->Load("texture01.png");
 	g_texture2->Load("texture02.png");
@@ -45,24 +48,23 @@ MofBool CGameApp::Initialize(void){
 	AnimationClip<const Sprite*> clip;
 	clip.SetClip(clip_data);
 	sprite_manager_.AddSprite(new Sprite(g_texture2,Vector2(0,0)));
-	
-	
-	for (auto &obj: objct_list_) 
-	{
-		obj = new GameObject();
-        obj->AddComponent<RigidBody2D>();
-		kadai.push(obj->AddComponent<Entity2D>());
-	}
-	objct_list_[0]->AddComponent<Position>(new Position(g_pGraphics->GetTargetWidth() / 2, g_pGraphics->GetTargetHeight() / 2));
-	objct_list_[1]->AddComponent<Position>(new Position(0,0));
-	auto sprite_render = objct_list_[0]->AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[0]);
-	objct_list_[1]->AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[2]);
-	auto animator = new Animator<const Sprite*>(&sprite_render);
-    objct_list_[0]->AddComponent(animator)->PushBack(clip);
-    kadai.animator_ = animator;
-	objct_list_[0]->Start();
-	objct_list_[1]->Start();
 
+	auto& girl = root->Instantiate();
+	auto& boy = root->Instantiate();
+    girl.AddComponent<RigidBody2D>();
+
+    girl.AddComponent<Position>(new Position(g_pGraphics->GetTargetWidth() / 2, g_pGraphics->GetTargetHeight() / 2));
+    boy.AddComponent<Position>(new Position(0,0));
+	auto sprite_render = girl.AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[0]);
+	boy.AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[2]);
+	auto animator = new Animator<const Sprite*>(&sprite_render);
+    girl.AddComponent(animator)->PushBack(clip);
+    kadai.animator_ = animator;
+
+    kadai.push(&girl.AddComponent<Entity2D>()->SetInput(input_observer_));
+    kadai.push(&boy.AddComponent<Entity2D>()->SetInput(input_observer_));
+
+    root->Start();
 	bg_hsv_color_ = new mylib::HSV(0, 1.0f, 1.0f);
 	bg_rgb_color_ = new mylib::RGBA();
 	return TRUE;
@@ -79,12 +81,8 @@ MofBool CGameApp::Update(void){
 	bg_hsv_color_->set_h(bg_hsv_color_->hue() + 1);
 	//hsvをrgbに変換
 	bg_rgb_color_->to_convert(*bg_hsv_color_);
-	world->Update();
-	for (auto obj : objct_list_) 
-	{
-		obj->Update();
-		
-	}
+
+    root->Update();
 	return TRUE;
 }
 /*************************************************************************//*!
@@ -101,9 +99,7 @@ MofBool CGameApp::Render(void){
 	g_pGraphics->ClearTarget(bg_rgb_color_->red(), bg_rgb_color_->green(), bg_rgb_color_->blue(), 0.0f, 1.0f, 0);
 
 	//描画
-	for (auto obj : objct_list_) {
-		obj->Render();
-	}
+    root->Render();
 	
 	//描画の終了
 	g_pGraphics->RenderEnd();
@@ -123,10 +119,6 @@ MofBool CGameApp::Release(void){
 	delete bg_rgb_color_;
 	g_texture->Release();
 	g_texture2->Release();
-	for (auto &obj : objct_list_)
-	{
-		delete obj;
-	}
-    delete world;
+
 	return TRUE;
 }

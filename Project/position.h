@@ -1,6 +1,5 @@
 #pragma once
 #include "Component.h"
-#include "Mof.h"
 #include "Subject.h"
 
 class Position final : public Component

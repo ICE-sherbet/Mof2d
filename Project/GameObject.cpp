@@ -1,7 +1,12 @@
 #include "GameObject.h"
 
-GameObject::GameObject()
-{}
+GameObject::GameObject(Object* parent):Object(parent)
+{
+}
+
+GameObject::GameObject(){
+
+}
 
 GameObject::~GameObject()
 {

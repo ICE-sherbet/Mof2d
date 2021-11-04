@@ -2,7 +2,6 @@
 #include "rigidbody.h"
 #include "position.h"
 #include "Component.h"
-#include "Mof.h"
 
 
 class RigidBody2D final : public Rigidbody,public Component

@@ -6,47 +6,19 @@
 
 class Scene : public Object
 {
-	std::vector<GameObject*> objects_{ 0 };
+	std::vector<GameObject*> objects_;
 public:
-    ~Scene(){
-        for (auto elem:objects_)
-        {
-            delete elem;
-        }
-    }
-	GameObject& Instantiate()
-	{
-		GameObject* obj = new GameObject;
-        objects_.emplace_back(obj);
-		return *obj;
-	}
-    GameObject& Instantiate(GameObject obj)
-    {
-        objects_.emplace_back(&obj);
-        return obj;
-    }
+    ~Scene();
+
+	GameObject& Instantiate();
+
+	GameObject& Instantiate(GameObject obj);
 
 
-	void Start() override
-	{
-        for (auto elem : objects_)
-        {
-            elem->Start();
-        }
-	}
-	void Update() override
-	{
-        for (auto elem : objects_)
-        {
-            elem->Update();
-        }
-	}
-	void Render() override
-	{
-        for (auto elem : objects_)
-        {
-            elem->Render();
-        }
-	}
+	void Start() override;
+
+	void Update() override;
+
+	void Render() override;
 };
 

@@ -14,6 +14,7 @@
 #include "componen_headert.h"
 #include "kadai3.h"
 #include "SpriteManager.h"
+#include "Scene.h"
 
 /*******************************//*!
 @brief	基本ゲームアプリ。
@@ -21,8 +22,6 @@
 @author	濱田　享
 *//********************************/
 class CGameApp : public CSingleGameApplication {
-	std::vector<GameObject*> objct_list_ = std::vector<GameObject*>(2);//オブジェクト
-	GameObject* world;
 public:
 	/*************************************************************************//*!
 			@brief			コンストラクタ

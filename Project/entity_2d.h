@@ -16,7 +16,7 @@ public:
 	    
     }
 	~Entity2D();
-    void SetInput(InputObserver* input);
+    Entity2D& SetInput(InputObserver* input);
     Entity2D& Move(Vector2 dir);
 
 	void Update() override;

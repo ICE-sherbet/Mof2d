@@ -6,7 +6,7 @@ class Object
 protected:
 	Object* parent_ = nullptr;
 	bool is_start_ = false;
-    std::vector<Object*> child_;
+	std::vector<Object*> child_;
     Object(Object* parent);
 	Object();
 public:

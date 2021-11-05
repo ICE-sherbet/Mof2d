@@ -28,9 +28,10 @@ public:
 
     GameObject& Instantiate(){
         auto&& obj = new GameObject(this);
-        obj->Start();
+        if(is_start_)obj->Start();
         return *obj;
     }
+
 
 	template <typename type>
 	type* GetComponent();

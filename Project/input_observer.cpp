@@ -19,7 +19,7 @@ void InputObserver::Update()
 	if(g_pInput->IsKeyHold(RIGHT_KEY))move_vec_.x += 1;
 	if(g_pInput->IsKeyHold(UP_KEY))move_vec_.y -= 1;
 	if(g_pInput->IsKeyHold(DOWN_KEY))move_vec_.y += 1;
-	if(move_vec_.x == 0 == move_vec_.y)return;
+	if(move_vec_.x == 0 && 0==move_vec_.y)return;
 	dir_ = move_vec_ / move_vec_.Length();
 	move_observer->OnNext(dir_);
 	move_vec_ = Vector2(0, 0);

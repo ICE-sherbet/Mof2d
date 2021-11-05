@@ -18,9 +18,14 @@ GameObject::~GameObject()
 
 void GameObject::Start()
 {
+	is_start_ = true;
 	for (auto elem : components_)
 	{
 		elem->Start();
+	}
+    for (auto elem : child_) 
+	{
+        elem->Start();
 	}
 }
 
@@ -30,6 +35,10 @@ void GameObject::Update()
 	{
 		elem->Update();
 	}
+    for (auto elem : child_) 
+	{
+       elem->Update();
+    }
 }
 
 void GameObject::Render()
@@ -38,6 +47,9 @@ void GameObject::Render()
 	{
 		elem->Render();
 	}
+    for (auto elem : child_) {
+        elem->Render();
+    }
 }
 
 

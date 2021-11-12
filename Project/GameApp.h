@@ -9,10 +9,10 @@
 
 #pragma once
 //INCLUDE
-#include	"Mof.h"
-#include	"RGBA.h"
+#include "Mof.h"
+#include "RGBA.h"
 #include "componen_headert.h"
-#include "kadai3.h"
+#include "kadai4.h"
 #include "SpriteManager.h"
 #include "Scene.h"
 

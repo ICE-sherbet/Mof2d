@@ -5,7 +5,8 @@ Position::Position(const Vector2 position_): position_(position_)
 
 Position::Position(float x, float y): position_(x,y)
 {}
-
+Position::Position()
+{}
 Vector2 Position::GetPosition() const
 {
 	return position_;

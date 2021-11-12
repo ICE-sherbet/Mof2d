@@ -10,11 +10,11 @@ void InputObserver::Update()
     IsKeyPush<MOFKEY_D>();
     IsKeyPush<MOFKEY_SPACE>();
 
+	g_pInput->GetMousePos(pos);
 	if(g_pInput->IsMouseKeyPush(MOFMOUSE_LBUTTON)){
-		Vector2 pos;
-		g_pInput->GetMousePos(pos);
-		mouse_observer->OnNext(pos);
+		mouse_push_observer->OnNext(pos);
 	}
+	mouse_observer->OnNext(pos);
 	if(g_pInput->IsKeyHold(LEFT_KEY))move_vec_.x -= 1;
 	if(g_pInput->IsKeyHold(RIGHT_KEY))move_vec_.x += 1;
 	if(g_pInput->IsKeyHold(UP_KEY))move_vec_.y -= 1;

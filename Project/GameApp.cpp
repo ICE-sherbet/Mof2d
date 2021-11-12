@@ -38,32 +38,8 @@ MofBool CGameApp::Initialize(void){
 	auto& world = root->Instantiate();
 	world.AddComponent<Position>(new Position(0,0));
 	input_observer_ = world.AddComponent<InputObserver>();
-	auto& kadai = world.AddComponent<kadai3>()->set_input_(input_observer_);
-
-	g_texture->Load("texture01.png");
-	g_texture2->Load("texture02.png");
-	auto frame = sprite_manager_.AddSpriteSlice(g_texture, 2, 1);
-	std::vector<AnimationKeyFrame> frame_info = {{0,1},{1,1}};
-	AnimationClipData<const Sprite*> clip_data = { frame_info,frame };
-	AnimationClip<const Sprite*> clip;
-	clip.SetClip(clip_data);
-	sprite_manager_.AddSprite(new Sprite(g_texture2,Vector2(0,0)));
-
-	auto& girl = root->Instantiate();
-	auto& boy = root->Instantiate();
-    girl.AddComponent<RigidBody2D>();
-
-    girl.AddComponent<Position>(new Position(g_pGraphics->GetTargetWidth() / 2, g_pGraphics->GetTargetHeight() / 2));
-    boy.AddComponent<Position>(new Position(0,0));
-	auto sprite_render = girl.AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[0]);
-	boy.AddComponent<SpriteRenderer>()->SetSprite(sprite_manager_[2]);
-	auto animator = new Animator<const Sprite*>(&sprite_render);
-    girl.AddComponent(animator)->PushBack(clip);
-    kadai.animator_ = animator;
-
-    kadai.push(&girl.AddComponent<Entity2D>()->SetInput(input_observer_));
-    kadai.push(&boy.AddComponent<Entity2D>()->SetInput(input_observer_));
-
+	auto kadai = world.AddComponent<kadai4>();
+	kadai->set_input_(input_observer_);
     root->Start();
 	bg_hsv_color_ = new mylib::HSV(0, 1.0f, 1.0f);
 	bg_rgb_color_ = new mylib::RGBA();
@@ -97,7 +73,8 @@ MofBool CGameApp::Render(void){
 	g_pGraphics->RenderStart();
 	//‰æ–Ê‚ÌƒNƒŠƒA
 	g_pGraphics->ClearTarget(bg_rgb_color_->red(), bg_rgb_color_->green(), bg_rgb_color_->blue(), 0.0f, 1.0f, 0);
-
+	CGraphicsUtilities::RenderFillRect(0,0,10,1,MOF_XRGB(255,255,255));
+	CGraphicsUtilities::RenderLine(12,1,20,1,MOF_XRGB(255,255,255));
 	//•`‰æ
     root->Render();
 	

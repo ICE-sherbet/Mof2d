@@ -106,6 +106,7 @@
     <ClCompile Include="entity_2d.cpp" />
     <ClCompile Include="GameApp.cpp" />
     <ClCompile Include="input_observer.cpp" />
+    <ClCompile Include="IShapeStrategy.cpp" />
     <ClCompile Include="kadai3.cpp" />
     <ClCompile Include="kadai4.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -114,6 +115,7 @@
     <ClCompile Include="rigidbody.cpp" />
     <ClCompile Include="RigidBody2D.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteManager.cpp" />
     <ClCompile Include="sprite_renderer.cpp" />
@@ -132,6 +134,7 @@
     <ClInclude Include="IAnimatable.h" />
     <ClInclude Include="ICollision.h" />
     <ClInclude Include="input_observer.h" />
+    <ClInclude Include="IShapeStrategy.h" />
     <ClInclude Include="kadai3.h" />
     <ClInclude Include="kadai4.h" />
     <ClInclude Include="GameObject.h" />
@@ -140,6 +143,8 @@
     <ClInclude Include="rigidbody.h" />
     <ClInclude Include="RigidBody2D.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="ShapeStrategy.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteManager.h" />
     <ClInclude Include="SpriteRenderer.h" />

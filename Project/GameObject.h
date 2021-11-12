@@ -26,14 +26,10 @@ public:
 	void Render() override;
 
 
-    GameObject& Instantiate(){
-        auto&& obj = new GameObject(this);
-        if(is_start_)obj->Start();
-        return *obj;
-    }
+    GameObject* Instantiate();
 
 
-	template <typename type>
+    template <typename type>
 	type* GetComponent();
 
 	template <typename type>

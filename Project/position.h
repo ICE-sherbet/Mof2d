@@ -10,7 +10,7 @@ public:
 
 	Position(const Vector2 position_);
 	Position(float x,float y);
-
+	Position();
 	Vector2 GetPosition() const;
 	const Vector2* LGetPosition() const;
 	Position& Move(const Vector2& dir);

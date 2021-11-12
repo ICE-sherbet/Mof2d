@@ -96,6 +96,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\cpp\kadai5.cpp" />
     <ClCompile Include="Src\cpp\Animator.cpp" />
     <ClCompile Include="Src\cpp\collider_2d.cpp" />
     <ClCompile Include="Src\cpp\collider_2d_box.cpp" />
@@ -122,6 +123,7 @@
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\Header\kadai5.h" />
     <ClInclude Include="Src\Header\collider_2d.h" />
     <ClInclude Include="Src\Header\Collider2DBox.h" />
     <ClInclude Include="Src\Header\CollisionCircle.h" />

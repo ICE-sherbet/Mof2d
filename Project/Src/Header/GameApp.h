@@ -12,7 +12,7 @@
 #include "Mof.h"
 #include "RGBA.h"
 #include "componen_headert.h"
-#include "kadai4.h"
+#include "kadai5.h"
 #include "SpriteManager.h"
 #include "Scene.h"
 

@@ -9,6 +9,7 @@ class ICollision
 protected:
     const Vector2* position_ = nullptr;
 public:
+    virtual ~ICollision() = default;
     ICollision(const Vector2* position) :position_(position){}
     void SetPosition(const Vector2* position)
     {

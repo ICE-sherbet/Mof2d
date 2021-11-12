@@ -25,6 +25,15 @@
     <Filter Include="ソース ファイル\Animator">
       <UniqueIdentifier>{96d2ccd0-6928-4ebe-b973-3544ad125e65}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\component\Collider">
+      <UniqueIdentifier>{75e6b7e5-f62e-47c2-bb58-2e2ee34465bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\component\Collision">
+      <UniqueIdentifier>{8153947b-221c-4eae-b7bf-5252ff293d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\component\Collider\Collision">
+      <UniqueIdentifier>{9d91a476-c360-40e8-8e26-024197006646}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameApp.cpp">
@@ -47,9 +56,6 @@
     </ClCompile>
     <ClCompile Include="collider_2d_box.cpp">
       <Filter>ソース ファイル\component</Filter>
-    </ClCompile>
-    <ClCompile Include="collider_2d.cpp">
-      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="RigidBody2D.cpp">
       <Filter>ソース ファイル\component</Filter>
@@ -84,6 +90,18 @@
     <ClCompile Include="Object.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="collider_2d.cpp">
+      <Filter>ソース ファイル\component</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionCircle.cpp">
+      <Filter>ソース ファイル\component\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionPoint.cpp">
+      <Filter>ソース ファイル\component\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionRect.cpp">
+      <Filter>ソース ファイル\component\Collision</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Subject.h">
@@ -103,12 +121,6 @@
     </ClInclude>
     <ClInclude Include="position.h">
       <Filter>ヘッダー ファイル\component</Filter>
-    </ClInclude>
-    <ClInclude Include="collider_2d_box.h">
-      <Filter>ヘッダー ファイル\component</Filter>
-    </ClInclude>
-    <ClInclude Include="collider_2d.h">
-      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="RigidBody2D.h">
       <Filter>ヘッダー ファイル\component</Filter>
@@ -148,6 +160,24 @@
     </ClInclude>
     <ClInclude Include="Object.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ICollision.h">
+      <Filter>ヘッダー ファイル\component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider2DBox.h">
+      <Filter>ヘッダー ファイル\component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="collider_2d.h">
+      <Filter>ヘッダー ファイル\component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionRect.h">
+      <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionCircle.h">
+      <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionPoint.h">
+      <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

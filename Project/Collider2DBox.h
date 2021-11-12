@@ -5,7 +5,7 @@
 #include "Component.h"
 
 //短形の当たり判定クラス
-class Collider2DBox : public Collider2D, public Component
+class Collider2DBox :  public Component
 {
 	CRectangle collider_rectangle_;
 	//デバッグ表示用
@@ -20,12 +20,12 @@ public:
 
 	Collider2DBox(const CRectangle collider);
 	Collider2DBox();
-
-	bool CollisionInRect(const Collider2DBox& rect) const;
-	bool CollisionInRect(const Collider2DBox& rect, const Vector2 vector) const;
+	
 
 	Vector2 Radius() const;
 
 	void Start() override;
 	void Render() override;
+
+
 };

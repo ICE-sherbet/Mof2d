@@ -1,5 +1,6 @@
 #include "SpriteRenderer.h"
 
+
 SpriteRenderer::SpriteRenderer(const Sprite* sprite)
 {
 	sprite_ = sprite;

@@ -42,7 +42,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>../../MofLibrary/Include;../../../MofLibrary/Include;./Mylibrary/Include;$(IncludePath)</IncludePath>
+    <IncludePath>../../MofLibrary/Include;../../../MofLibrary/Include;./Src/Header;./Mylibrary/Include;$(IncludePath)</IncludePath>
     <LibraryPath>../../MofLibrary/Library;../../../MofLibrary/Library;./Mylibrary/Library;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\</OutDir>
   </PropertyGroup>
@@ -96,60 +96,60 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Animator.cpp" />
-    <ClCompile Include="collider_2d.cpp" />
-    <ClCompile Include="collider_2d_box.cpp" />
-    <ClCompile Include="CollisionCircle.cpp" />
-    <ClCompile Include="CollisionPoint.cpp" />
-    <ClCompile Include="CollisionRect.cpp" />
-    <ClCompile Include="Component.cpp" />
-    <ClCompile Include="entity_2d.cpp" />
-    <ClCompile Include="GameApp.cpp" />
-    <ClCompile Include="input_observer.cpp" />
-    <ClCompile Include="IShapeStrategy.cpp" />
-    <ClCompile Include="kadai3.cpp" />
-    <ClCompile Include="kadai4.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="Object.cpp" />
-    <ClCompile Include="position.cpp" />
-    <ClCompile Include="rigidbody.cpp" />
-    <ClCompile Include="RigidBody2D.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="Shape.cpp" />
-    <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="SpriteManager.cpp" />
-    <ClCompile Include="sprite_renderer.cpp" />
+    <ClCompile Include="Src\cpp\Animator.cpp" />
+    <ClCompile Include="Src\cpp\collider_2d.cpp" />
+    <ClCompile Include="Src\cpp\collider_2d_box.cpp" />
+    <ClCompile Include="Src\cpp\CollisionCircle.cpp" />
+    <ClCompile Include="Src\cpp\CollisionPoint.cpp" />
+    <ClCompile Include="Src\cpp\CollisionRect.cpp" />
+    <ClCompile Include="Src\cpp\Component.cpp" />
+    <ClCompile Include="Src\cpp\entity_2d.cpp" />
+    <ClCompile Include="Src\cpp\GameApp.cpp" />
+    <ClCompile Include="Src\cpp\input_observer.cpp" />
+    <ClCompile Include="Src\cpp\IShapeStrategy.cpp" />
+    <ClCompile Include="Src\cpp\kadai3.cpp" />
+    <ClCompile Include="Src\cpp\kadai4.cpp" />
+    <ClCompile Include="Src\cpp\GameObject.cpp" />
+    <ClCompile Include="Src\cpp\Object.cpp" />
+    <ClCompile Include="Src\cpp\position.cpp" />
+    <ClCompile Include="Src\cpp\rigidbody.cpp" />
+    <ClCompile Include="Src\cpp\RigidBody2D.cpp" />
+    <ClCompile Include="Src\cpp\Scene.cpp" />
+    <ClCompile Include="Src\cpp\Shape.cpp" />
+    <ClCompile Include="Src\cpp\Sprite.cpp" />
+    <ClCompile Include="Src\cpp\SpriteManager.cpp" />
+    <ClCompile Include="Src\cpp\sprite_renderer.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="collider_2d.h" />
-    <ClInclude Include="Collider2DBox.h" />
-    <ClInclude Include="CollisionCircle.h" />
-    <ClInclude Include="CollisionPoint.h" />
-    <ClInclude Include="CollisionRect.h" />
-    <ClInclude Include="Component.h" />
-    <ClInclude Include="entity_2d.h" />
-    <ClInclude Include="GameApp.h" />
-    <ClInclude Include="Animator.h" />
-    <ClInclude Include="IAnimatable.h" />
-    <ClInclude Include="ICollision.h" />
-    <ClInclude Include="input_observer.h" />
-    <ClInclude Include="IShapeStrategy.h" />
-    <ClInclude Include="kadai3.h" />
-    <ClInclude Include="kadai4.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="position.h" />
-    <ClInclude Include="rigidbody.h" />
-    <ClInclude Include="RigidBody2D.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="Shape.h" />
-    <ClInclude Include="ShapeStrategy.h" />
-    <ClInclude Include="Sprite.h" />
-    <ClInclude Include="SpriteManager.h" />
-    <ClInclude Include="SpriteRenderer.h" />
-    <ClInclude Include="Subject.h" />
-    <ClInclude Include="componen_headert.h" />
+    <ClInclude Include="Src\Header\collider_2d.h" />
+    <ClInclude Include="Src\Header\Collider2DBox.h" />
+    <ClInclude Include="Src\Header\CollisionCircle.h" />
+    <ClInclude Include="Src\Header\CollisionPoint.h" />
+    <ClInclude Include="Src\Header\CollisionRect.h" />
+    <ClInclude Include="Src\Header\Component.h" />
+    <ClInclude Include="Src\Header\entity_2d.h" />
+    <ClInclude Include="Src\Header\GameApp.h" />
+    <ClInclude Include="Src\Header\Animator.h" />
+    <ClInclude Include="Src\Header\IAnimatable.h" />
+    <ClInclude Include="Src\Header\ICollision.h" />
+    <ClInclude Include="Src\Header\input_observer.h" />
+    <ClInclude Include="Src\Header\IShapeStrategy.h" />
+    <ClInclude Include="Src\Header\kadai3.h" />
+    <ClInclude Include="Src\Header\kadai4.h" />
+    <ClInclude Include="Src\Header\GameObject.h" />
+    <ClInclude Include="Src\Header\Object.h" />
+    <ClInclude Include="Src\Header\position.h" />
+    <ClInclude Include="Src\Header\rigidbody.h" />
+    <ClInclude Include="Src\Header\RigidBody2D.h" />
+    <ClInclude Include="Src\Header\Scene.h" />
+    <ClInclude Include="Src\Header\Shape.h" />
+    <ClInclude Include="Src\Header\ShapeStrategy.h" />
+    <ClInclude Include="Src\Header\Sprite.h" />
+    <ClInclude Include="Src\Header\SpriteManager.h" />
+    <ClInclude Include="Src\Header\SpriteRenderer.h" />
+    <ClInclude Include="Src\Header\Subject.h" />
+    <ClInclude Include="Src\Header\componen_headert.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Version.rc" />

@@ -36,148 +36,163 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameApp.cpp">
+    <ClCompile Include="Src\cpp\GameApp.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="WinMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject.cpp">
+    <ClCompile Include="Src\cpp\GameObject.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="entity_2d.cpp">
+    <ClCompile Include="Src\cpp\entity_2d.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="Component.cpp">
+    <ClCompile Include="Src\cpp\Component.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="position.cpp">
+    <ClCompile Include="Src\cpp\position.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="collider_2d_box.cpp">
+    <ClCompile Include="Src\cpp\collider_2d_box.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="RigidBody2D.cpp">
+    <ClCompile Include="Src\cpp\RigidBody2D.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="rigidbody.cpp">
+    <ClCompile Include="Src\cpp\rigidbody.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="input_observer.cpp">
+    <ClCompile Include="Src\cpp\input_observer.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="sprite_renderer.cpp">
+    <ClCompile Include="Src\cpp\sprite_renderer.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="kadai3.cpp">
+    <ClCompile Include="Src\cpp\kadai3.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Animator.cpp">
+    <ClCompile Include="Src\cpp\Animator.cpp">
       <Filter>ソース ファイル\Animator</Filter>
     </ClCompile>
-    <ClCompile Include="Sprite.cpp">
+    <ClCompile Include="Src\cpp\Sprite.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="SpriteManager.cpp">
+    <ClCompile Include="Src\cpp\SpriteManager.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="kadai4.cpp">
+    <ClCompile Include="Src\cpp\kadai4.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Scene.cpp">
+    <ClCompile Include="Src\cpp\Scene.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Object.cpp">
+    <ClCompile Include="Src\cpp\Object.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="collider_2d.cpp">
+    <ClCompile Include="Src\cpp\collider_2d.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="CollisionCircle.cpp">
+    <ClCompile Include="Src\cpp\CollisionCircle.cpp">
       <Filter>ソース ファイル\component\Collision</Filter>
     </ClCompile>
-    <ClCompile Include="CollisionPoint.cpp">
+    <ClCompile Include="Src\cpp\CollisionPoint.cpp">
       <Filter>ソース ファイル\component\Collision</Filter>
     </ClCompile>
-    <ClCompile Include="CollisionRect.cpp">
+    <ClCompile Include="Src\cpp\CollisionRect.cpp">
       <Filter>ソース ファイル\component\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\cpp\IShapeStrategy.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\cpp\Shape.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Subject.h">
+    <ClInclude Include="Src\Header\Subject.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="GameApp.h">
+    <ClInclude Include="Src\Header\GameApp.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
+    <ClInclude Include="Src\Header\GameObject.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="entity_2d.h">
+    <ClInclude Include="Src\Header\entity_2d.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
-    <ClInclude Include="Component.h">
+    <ClInclude Include="Src\Header\Component.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
-    <ClInclude Include="position.h">
+    <ClInclude Include="Src\Header\position.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
-    <ClInclude Include="RigidBody2D.h">
+    <ClInclude Include="Src\Header\RigidBody2D.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
-    <ClInclude Include="rigidbody.h">
+    <ClInclude Include="Src\Header\rigidbody.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="componen_headert.h">
+    <ClInclude Include="Src\Header\componen_headert.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
-    <ClInclude Include="SpriteRenderer.h">
+    <ClInclude Include="Src\Header\SpriteRenderer.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
-    <ClInclude Include="input_observer.h">
+    <ClInclude Include="Src\Header\input_observer.h">
       <Filter>ヘッダー ファイル\component</Filter>
     </ClInclude>
-    <ClInclude Include="kadai3.h">
+    <ClInclude Include="Src\Header\kadai3.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Animator.h">
+    <ClInclude Include="Src\Header\Animator.h">
       <Filter>ヘッダー ファイル\Animator</Filter>
     </ClInclude>
-    <ClInclude Include="Sprite.h">
+    <ClInclude Include="Src\Header\Sprite.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="SpriteManager.h">
+    <ClInclude Include="Src\Header\SpriteManager.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="IAnimatable.h">
+    <ClInclude Include="Src\Header\IAnimatable.h">
       <Filter>ヘッダー ファイル\Animator</Filter>
     </ClInclude>
-    <ClInclude Include="kadai4.h">
+    <ClInclude Include="Src\Header\kadai4.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Scene.h">
+    <ClInclude Include="Src\Header\Scene.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Object.h">
+    <ClInclude Include="Src\Header\Object.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ICollision.h">
+    <ClInclude Include="Src\Header\ICollision.h">
       <Filter>ヘッダー ファイル\component\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="Collider2DBox.h">
+    <ClInclude Include="Src\Header\Collider2DBox.h">
       <Filter>ヘッダー ファイル\component\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="collider_2d.h">
+    <ClInclude Include="Src\Header\collider_2d.h">
       <Filter>ヘッダー ファイル\component\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="CollisionRect.h">
+    <ClInclude Include="Src\Header\CollisionRect.h">
       <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="CollisionCircle.h">
+    <ClInclude Include="Src\Header\CollisionCircle.h">
       <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="CollisionPoint.h">
+    <ClInclude Include="Src\Header\CollisionPoint.h">
       <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Header\IShapeStrategy.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Header\Shape.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Header\ShapeStrategy.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

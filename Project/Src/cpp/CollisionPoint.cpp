@@ -1,6 +1,6 @@
 #include "CollisionPoint.h"
 
-const Vector2& CollisionPoint::GetPoint() const
+const Vector2 CollisionPoint::GetPoint() const
 {
     return offset_ + *position_;
 }

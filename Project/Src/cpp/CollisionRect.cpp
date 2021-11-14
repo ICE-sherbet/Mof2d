@@ -1,6 +1,6 @@
 #include "CollisionRect.h"
 
-const Mof::Rectangle& CollisionRect::GetRect() const
+const Mof::Rectangle CollisionRect::GetRect() const
 {
     return rectangle_ + *position_;
 }
@@ -20,7 +20,7 @@ bool CollisionRect::CollisionHit(ICollision* collision)
 
 bool CollisionRect::CollisionHit(CollisionRect* rect)
 {
-    return CRectangleUtilities::CollisionRect(GetRect(),rect->GetRect());
+    return  CRectangleUtilities::CollisionRect(rect->GetRect(), GetRect());;
 }
 
 bool CollisionRect::CollisionHit(CollisionCircle* circle)

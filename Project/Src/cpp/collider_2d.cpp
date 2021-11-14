@@ -13,14 +13,18 @@ void Collider2D::Update()
     if (!collision_)return;
     for (auto target : targets_)
     {
-        if(target->collision_)continue;
-        collision_->CollisionHit(target->collision_);
+        if(!target->collision_)continue;
+        if(collision_->CollisionHit(target->collision_))
+        {
+            hit_objects->OnNext(target->parent_);
+        }
     }
 }
 
-void Collider2D::TargetAdd(const Collider2D* target)
+Collider2D& Collider2D::TargetAdd(const Collider2D* target)
 {
     targets_.emplace_back(target);
+    return *this;
 }
 
 Collider2D::~Collider2D()

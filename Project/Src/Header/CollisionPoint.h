@@ -8,7 +8,7 @@ class CollisionPoint :
 {
     Vector2 offset_{ 0,0 };
 public:
-    const Vector2& GetPoint() const;
+    const Vector2 GetPoint() const;
 
     CollisionPoint(const Vector2* position, const Vector2& offset);
 

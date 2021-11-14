@@ -18,6 +18,11 @@ public:
     {
 
     }
+    Shape& SetColor(MofU32 col)
+    {
+        color_ = col;
+        return *this;
+    }
     Shape& SetShape(CRectangle rectangle)
     {
         rectangle_ = rectangle;
@@ -29,8 +34,15 @@ public:
         color_ = color;
         return *this;
     }
+    Shape& SetShape(CCircle circle, MofU32 color)
+    {
+        rectangle_ = CRectangle((circle.Position - Vector2{circle.r,circle.r}), (circle.Position + Vector2{circle.r,circle.r}));
+        color_ = color;
+        return *this;
+    }
     Shape& SetShapePattern(IShapeStrategy* shape)
     {
+        if (shape_)delete shape_;
         shape_ = shape;
         return *this;
     }

@@ -6,7 +6,7 @@ class CollisionRect : public ICollision
 {
     Mof::Rectangle rectangle_;
 public:
-    const Mof::Rectangle& GetRect() const;
+    const Mof::Rectangle GetRect() const;
 
     CollisionRect(const Vector2* position);
 

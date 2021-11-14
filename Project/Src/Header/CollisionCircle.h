@@ -7,7 +7,7 @@ class CollisionCircle : public ICollision
 
     Circle circle_;
 public:
-    const Circle& GetCircle() const;
+    const Circle GetCircle() const;
 
     CollisionCircle(const Vector2* position);
 

@@ -1,6 +1,6 @@
 #include "CollisionCircle.h"
 
-const Circle& CollisionCircle::GetCircle() const
+const Circle CollisionCircle::GetCircle() const
 {
     return circle_ + *position_;
 }

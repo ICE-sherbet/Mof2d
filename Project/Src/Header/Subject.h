@@ -27,13 +27,14 @@ public:
     }
 
 protected:
-	std::list<std::function<void(T value)>> on_next_function_list_;
-	std::list<std::function<void()>> on_completed_function_list_;
-	std::list<std::function<void()>> on_error_function_list_;;
+	std::list<std::function<void(T value)>> on_next_function_list_{};
+	std::list<std::function<void()>> on_completed_function_list_{};
+	std::list<std::function<void()>> on_error_function_list_{};
 };
 template<class T>
 inline void subject<T>::OnNext(T value)
 {
+	if (on_next_function_list_.empty())return;
 	for (auto function : on_next_function_list_)
 	{
 		function(value);
@@ -42,6 +43,7 @@ inline void subject<T>::OnNext(T value)
 template<class T>
 inline void subject<T>::OnCompleted()
 {
+	if (on_completed_function_list_.empty())return;
 	for (auto function : on_completed_function_list_)
 	{
 		function();
@@ -51,6 +53,7 @@ inline void subject<T>::OnCompleted()
 template<class T>
 inline void subject<T>::OnError(std::exception& e)
 {
+	if (on_error_function_list_.empty())return;
 	for (auto function : on_error_function_list_)
 	{
 		function();

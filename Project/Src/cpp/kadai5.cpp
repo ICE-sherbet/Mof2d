@@ -95,7 +95,7 @@ void kadai5::Update()
     obj_rec3_->GetComponent<kadai5_3>()->changeColor(MOF_COLOR_WHITE);
 }
 
-kadai5& kadai5::set_input_(InputObserver* input)
+kadai5& kadai5::SetInput(InputObserver* input)
 {
     input_ = input;
     input_->mouse_observer->Subscribe([&](auto dir)

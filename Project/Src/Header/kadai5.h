@@ -68,7 +68,7 @@ class kadai5 : public Component
 
     void Build(GameObject& target, CRectangle rect, Collider2D* mouse, IShapeStrategy* shape_pattern, MofU32 color);
 
-    void Build(GameObject& target, CCircle Ccircle);
+    static void Build(GameObject& target, CCircle Ccircle);
 
     void Build(GameObject& target, CCircle circle, Collider2D* mouse, IShapeStrategy* shape_pattern, MofU32 color);
 public:
@@ -78,6 +78,6 @@ public:
 
     void Update() override;
 
-    kadai5& set_input_(InputObserver* input);
+    kadai5& SetInput(InputObserver* input);
 };
 

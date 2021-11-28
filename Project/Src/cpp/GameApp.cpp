@@ -37,7 +37,7 @@ MofBool CGameApp::Initialize(void){
 	world->AddComponent<Position>(new Position(0,0));
 	InputObserver* input_observer_ = world->AddComponent<InputObserver>();
 	auto kadai = world->AddComponent<kadai5>();
-	kadai->set_input_(input_observer_);
+	kadai->SetInput(input_observer_);
     root->Start();
 	bg_hsv_color_ = new mylib::HSV(0, 1.0f, 1.0f);
 	bg_rgb_color_ = new mylib::RGBA();

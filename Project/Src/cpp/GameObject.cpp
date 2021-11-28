@@ -55,9 +55,8 @@ void GameObject::Render()
 
 GameObject* GameObject::Instantiate()
 {
-    auto* obj = new GameObject(this);
+    auto&& obj = new GameObject(this);
 	child_.emplace_back(obj);
-	obj->AddComponent<Position>();
     if(is_start_)obj->Start();
     return obj;
 }

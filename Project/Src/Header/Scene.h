@@ -10,7 +10,7 @@ class Scene : public Object
 public:
     ~Scene();
 
-	GameObject& Instantiate();
+	GameObject* Instantiate();
 
 	GameObject& Instantiate(GameObject obj);
 

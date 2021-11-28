@@ -8,13 +8,13 @@ Scene::~Scene()
 	}
 }
 
-GameObject& Scene::Instantiate()
+GameObject* Scene::Instantiate()
 {
-	auto* obj = new GameObject(this);
+	GameObject* obj = new GameObject(this);
 
 	if(is_start_)obj->Start();
 	objects_.emplace_back(obj);
-	return *obj;
+	return obj;
 }
 
 GameObject& Scene::Instantiate(GameObject obj)

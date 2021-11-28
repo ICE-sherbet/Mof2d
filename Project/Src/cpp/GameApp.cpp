@@ -21,8 +21,6 @@ SpriteManager sprite_manager_ = SpriteManager();
 
 Scene* root = new Scene;
 
-InputObserver* input_observer_;
-
 
 /*************************************************************************//*!
 		@brief			アプリケーションの初期化
@@ -35,11 +33,11 @@ MofBool CGameApp::Initialize(void){
 	//リソースフォルダを指定
 	CUtilities::SetCurrentDirectoryA("Resource");
 
-	auto& world = root->Instantiate();
-	world.AddComponent<Position>(new Position(0,0));
-	input_observer_ = world.AddComponent<InputObserver>();
-	auto kadai = world.AddComponent<kadai4>();
-	kadai->set_input_(input_observer_);
+	auto world = root->Instantiate();
+	world->AddComponent<Position>(new Position(0,0));
+	InputObserver* input_observer_ = world->AddComponent<InputObserver>();
+	auto kadai = world->AddComponent<kadai5>();
+	kadai->SetInput(input_observer_);
     root->Start();
 	bg_hsv_color_ = new mylib::HSV(0, 1.0f, 1.0f);
 	bg_rgb_color_ = new mylib::RGBA();
@@ -94,6 +92,7 @@ MofBool CGameApp::Release(void){
 	//画像リソースを解放
 	delete bg_hsv_color_;
 	delete bg_rgb_color_;
+	delete root;
 	g_texture->Release();
 	g_texture2->Release();
 

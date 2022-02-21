@@ -1,7 +1,8 @@
-#include "collider_2d.h"
+#include "Collision/collider_2d.h"
 
-Collider2D::Collider2D(ICollision* collision):collision_(collision)
-{}
+Collider2D::Collider2D(ICollision* collision): collision_(collision)
+{
+}
 
 void Collider2D::Start()
 {
@@ -13,8 +14,8 @@ void Collider2D::Update()
     if (!collision_)return;
     for (auto target : targets_)
     {
-        if(!target->collision_)continue;
-        if(collision_->CollisionHit(target->collision_))
+        if (!target->collision_)continue;
+        if (collision_->CollisionHit(target->collision_))
         {
             hit_objects->OnNext(target->parent_);
         }

@@ -1,6 +1,6 @@
-#include "Collider2DBox.h"
+#include "Collision/Collider2DBox.h"
 
-CRectangle Collider2DBox::ColliderRectangle() const
+Mof::CRectangle Collider2DBox::ColliderRectangle() const
 {
 	return collider_rectangle_;
 }

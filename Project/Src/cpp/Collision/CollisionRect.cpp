@@ -1,4 +1,4 @@
-#include "CollisionRect.h"
+#include "Collision/CollisionRect.h"
 
 const Mof::Rectangle CollisionRect::GetRect() const
 {

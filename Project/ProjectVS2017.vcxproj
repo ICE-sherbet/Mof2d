@@ -100,11 +100,11 @@
   <ItemGroup>
     <ClCompile Include="Src\cpp\kadai5.cpp" />
     <ClCompile Include="Src\cpp\Animator.cpp" />
-    <ClCompile Include="Src\cpp\collider_2d.cpp" />
-    <ClCompile Include="Src\cpp\collider_2d_box.cpp" />
-    <ClCompile Include="Src\cpp\CollisionCircle.cpp" />
-    <ClCompile Include="Src\cpp\CollisionPoint.cpp" />
-    <ClCompile Include="Src\cpp\CollisionRect.cpp" />
+    <ClCompile Include="Src\cpp\Collision\collider_2d.cpp" />
+    <ClCompile Include="Src\cpp\Collision\collider_2d_box.cpp" />
+    <ClCompile Include="Src\cpp\Collision\CollisionCircle.cpp" />
+    <ClCompile Include="Src\cpp\Collision\CollisionPoint.cpp" />
+    <ClCompile Include="Src\cpp\Collision\CollisionRect.cpp" />
     <ClCompile Include="Src\cpp\Component.cpp" />
     <ClCompile Include="Src\cpp\entity_2d.cpp" />
     <ClCompile Include="Src\cpp\GameApp.cpp" />
@@ -126,11 +126,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Header\kadai5.h" />
-    <ClInclude Include="Src\Header\collider_2d.h" />
-    <ClInclude Include="Src\Header\Collider2DBox.h" />
-    <ClInclude Include="Src\Header\CollisionCircle.h" />
-    <ClInclude Include="Src\Header\CollisionPoint.h" />
-    <ClInclude Include="Src\Header\CollisionRect.h" />
+    <ClInclude Include="Src\Header\Collision\collider_2d.h" />
+    <ClInclude Include="Src\Header\Collision\Collider2DBox.h" />
+    <ClInclude Include="Src\Header\Collision\CollisionCircle.h" />
+    <ClInclude Include="Src\Header\Collision\CollisionPoint.h" />
+    <ClInclude Include="Src\Header\Collision\CollisionRect.h" />
     <ClInclude Include="Src\Header\Component.h" />
     <ClInclude Include="Src\Header\entity_2d.h" />
     <ClInclude Include="Src\Header\GameApp.h" />

@@ -1,6 +1,6 @@
-#include "CollisionPoint.h"
+#include "Collision/CollisionPoint.h"
 
-const Vector2 CollisionPoint::GetPoint() const
+const Mof::Vector2 CollisionPoint::GetPoint() const
 {
     return offset_ + *position_;
 }

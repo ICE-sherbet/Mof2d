@@ -1,6 +1,10 @@
 #pragma once
 #include "Component.h"
 #include "ICollision.h"
+#include "CollisionPoint.h"
+#include "CollisionCircle.h"
+#include "CollisionRect.h"
+#include "CollisionPoint.h"
 #include "Subject.h"
 
 //TODO ‰½‚ÆÕ“Ë”»’è‚ğs‚¤‚©‚ğŠÇ—‚·‚éƒNƒ‰ƒX‚ğì¬‚·‚é

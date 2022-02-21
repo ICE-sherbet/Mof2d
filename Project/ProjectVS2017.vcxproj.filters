@@ -54,7 +54,7 @@
     <ClCompile Include="Src\cpp\position.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="Src\cpp\collider_2d_box.cpp">
+    <ClCompile Include="Src\cpp\Collision\collider_2d_box.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
     <ClCompile Include="Src\cpp\RigidBody2D.cpp">
@@ -90,16 +90,16 @@
     <ClCompile Include="Src\cpp\Object.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Src\cpp\collider_2d.cpp">
+    <ClCompile Include="Src\cpp\Collision\collider_2d.cpp">
       <Filter>ソース ファイル\component</Filter>
     </ClCompile>
-    <ClCompile Include="Src\cpp\CollisionCircle.cpp">
+    <ClCompile Include="Src\cpp\Collision\CollisionCircle.cpp">
       <Filter>ソース ファイル\component\Collision</Filter>
     </ClCompile>
-    <ClCompile Include="Src\cpp\CollisionPoint.cpp">
+    <ClCompile Include="Src\cpp\Collision\CollisionPoint.cpp">
       <Filter>ソース ファイル\component\Collision</Filter>
     </ClCompile>
-    <ClCompile Include="Src\cpp\CollisionRect.cpp">
+    <ClCompile Include="Src\cpp\Collision\CollisionRect.cpp">
       <Filter>ソース ファイル\component\Collision</Filter>
     </ClCompile>
     <ClCompile Include="Src\cpp\IShapeStrategy.cpp">
@@ -173,19 +173,19 @@
     <ClInclude Include="Src\Header\ICollision.h">
       <Filter>ヘッダー ファイル\component\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Header\Collider2DBox.h">
+    <ClInclude Include="Src\Header\Collision\Collider2DBox.h">
       <Filter>ヘッダー ファイル\component\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Header\collider_2d.h">
+    <ClInclude Include="Src\Header\Collision\collider_2d.h">
       <Filter>ヘッダー ファイル\component\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Header\CollisionRect.h">
+    <ClInclude Include="Src\Header\Collision\CollisionRect.h">
       <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Header\CollisionCircle.h">
+    <ClInclude Include="Src\Header\Collision\CollisionCircle.h">
       <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Header\CollisionPoint.h">
+    <ClInclude Include="Src\Header\Collision\CollisionPoint.h">
       <Filter>ヘッダー ファイル\component\Collider\Collision</Filter>
     </ClInclude>
     <ClInclude Include="Src\Header\IShapeStrategy.h">

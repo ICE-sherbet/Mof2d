@@ -1,12 +1,11 @@
 #pragma once
-#include "collider_2d.h"
 #include "Component.h"
 #include "input_observer.h"
 #include "position.h"
 #include "Shape.h"
-#include "CollisionRect.h"
-#include "CollisionCircle.h"
 #include "ShapeStrategy.h"
+#include "Collision/collider_2d.h"
+
 class kadai5_1 : public Component
 {
     bool is_red_ = true;

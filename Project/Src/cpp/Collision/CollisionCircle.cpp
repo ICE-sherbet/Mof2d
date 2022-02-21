@@ -1,4 +1,5 @@
-#include "CollisionCircle.h"
+
+#include "Collision/CollisionCircle.h"
 
 const Circle CollisionCircle::GetCircle() const
 {
